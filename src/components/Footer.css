@@ -1,0 +1,17 @@
+.footer {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.footer h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+}

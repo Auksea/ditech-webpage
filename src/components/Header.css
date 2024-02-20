@@ -1,0 +1,59 @@
+.header-wrapper {
+    background-image: url('C:\Users\Aukse\Desktop\Di-Tech\ditech-webpage\public\pics\example3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    position: relative;
+}
+
+.heading-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.heading {
+    font-size: 60px;
+    color: #000;
+}
+
+@keyframes slideInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-140px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .heading {
+    font-size: 60px;
+    color: #000;
+    animation: slideInFromTop 1s ease-in-out; /* Apply the animation */
+  }
+
+.company-icon {
+    height: 150px;
+    width: auto;
+    margin-top: 30px;
+    mix-blend-mode: multiply;
+}
+
+.navbar.navbar-light.bg-light {
+    background-color: transparent !important;
+}
+
+.navbar-nav {
+    margin-left: auto;   
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
