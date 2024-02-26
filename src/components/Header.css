@@ -1,5 +1,4 @@
 .header-wrapper {
-  background-image: url('C:\Users\Aukse\Desktop\Di-Tech\ditech-webpage\public\pics\example4.jpg');
   background-size: cover;
   background-position: center;
   height: 800px;
@@ -8,11 +7,16 @@
 
 .heading-container {
   position: absolute;
-  top: 60%;
+  top: 50%; /* Adjusted to be centered vertically */
   left: 49%;
   transform: translate(-80%, -50%);
   text-align: start;
   z-index: 1;
+}
+
+.heading-container.contact-page {
+  top: 40%; /* Adjusted for Contact page */
+  left: 55%;
 }
 
 @keyframes slideInFromTop {
@@ -28,7 +32,7 @@
 
 .heading {
   font-size: 70px;
-  color:black;
+  color: black;
   animation: slideInFromTop 1s ease-in-out;
 }
 
@@ -51,5 +55,10 @@
   font-weight: bold;
   font-size: 22px;
   color: black;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
 }
 
