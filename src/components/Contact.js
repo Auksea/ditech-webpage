@@ -1,16 +1,27 @@
 import React from 'react';
 import './Contact.css';
+import ContactForm from './ContactForm';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
+
 
 const Contact = () => {
     return (
         <div className="contact-page-container">
-            <h2 className="contact-heading">Contact Us</h2>
             <div className="columns-container">
                 <div className="contact-info-column">
                     <h2 className='column-heading'>Our workshop in Frederikssund, Denmark</h2>
-                    <p><strong>Address:</strong> Holmensvej 24A, 3600 Frederikssund, Denmark</p>
-                    <p><strong>Phone:</strong> +45 24 21 54 51</p>
-                    <p><strong>Email:</strong> service@di-tech.eu</p>
+                    <div className="contact-info">
+                        <div className="address-column">
+                            <p><FaMapMarkerAlt /></p>
+                            <p>Holmensvej 24A,</p>
+                            <p>3600 Frederikssund,</p>
+                            <p>Denmark</p>
+                        </div>
+                        <div className="phone-email-column">
+                            <p><FaPhone /> +45 24 21 54 51</p>
+                            <p><FaEnvelope /> service@di-tech.eu</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="map-column">
                     <iframe
@@ -25,9 +36,14 @@ const Contact = () => {
                     ></iframe>
                 </div>
             </div>
+            <div className="contact-form-container">
+                <h2 className='column-heading'>Or leave us a message</h2>
+                <ContactForm />
+            </div>
         </div>
     );
 };
+
 
 export default Contact;
 

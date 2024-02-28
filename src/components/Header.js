@@ -5,19 +5,30 @@ import './Header.css';
 const Header = () => {
     const [animated, setAnimated] = useState(false);
     const location = useLocation();
+    const isContactPage = location.pathname === '/contact';
+    const isAboutPage = location.pathname === '/about';
 
     useEffect(() => {
         setAnimated(true);
     }, []);
 
-    const isContactPage = location.pathname === '/contact';
-    const headerText = isContactPage ? "Contact Us" : "We offer specialized services to MAN B&W two-stroke engines";
-    const companyLogo = "/pics/Di-Tech-logo.jpg";
-    const headerImage = isContactPage ? "/pics/example8.jpg" : "/pics/example4.jpg"; // Different images for Home and Contact pages
+    let headerText, headerImage;
 
+    if (isContactPage) {
+        headerText = "Contact Us";
+        headerImage = "/pics/example8.jpg";
+    } else if (isAboutPage) {
+        headerText = "About Us";
+        headerImage = "/pics/example6.jpg";
+    } else {
+        headerText = "We offer specialized services to MAN B&W two-stroke engines";
+        headerImage = "/pics/example4.jpg";
+    }
+
+    const companyLogo = "/pics/Di-Tech-logo.jpg";
     return (
         <div className={`header-wrapper ${animated ? 'animated' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}${headerImage})` }}>
-            <div className={`heading-container ${isContactPage ? 'contact-page' : ''}`}>
+            <div className={`heading-container ${isContactPage ? 'contact-page' : ''} ${isAboutPage ? 'about-page' : ''}`}>
                 <h1 className="heading">{headerText}</h1>
             </div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">

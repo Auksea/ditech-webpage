@@ -1,0 +1,30 @@
+.about-container {
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .first-heading {
+    color: gray;
+    font-size: 20px;
+    margin-top: 60px;
+  }
+  
+  .second-heading {
+    color: #20B2AA;
+    font-size: 40px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+
+  .mission-block {
+    text-align: center;
+  }
+
+  .mission-block h2 {
+    color: #20B2AA;
+    font-size: 39px;
+  }
+
+  .mission-text {
+    font-size: 25px;
+  }

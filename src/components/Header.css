@@ -15,7 +15,12 @@
 }
 
 .heading-container.contact-page {
-  top: 40%; /* Adjusted for Contact page */
+  top: 45%; /* Made for Contact page */
+  left: 55%;
+}
+
+.heading-container.about-page {
+  top: 45%; /* Made for About page */
   left: 55%;
 }
 

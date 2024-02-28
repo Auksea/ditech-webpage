@@ -4,7 +4,6 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const Home = () => {
     return (
-        
         <div className="container">
             <h2 className="section-title">What We Offer</h2>
             <p className="section-description">We are specialists in ME-C, ME-B and all dual fuel engines</p>
