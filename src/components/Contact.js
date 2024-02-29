@@ -1,15 +1,41 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Contact.css';
 import ContactForm from './ContactForm';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 
-
 const Contact = () => {
+    useEffect(() => {
+        const handleScroll = () => {
+            const headings = document.querySelectorAll('.column-heading');
+            headings.forEach((heading) => {
+                if (isElementInViewport(heading)) {
+                    heading.classList.add('slide-from-left');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const isElementInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
     return (
         <div className="contact-page-container">
             <div className="columns-container">
                 <div className="contact-info-column">
-                    <h2 className='column-heading'>Our workshop in Frederikssund, Denmark</h2>
+                    <p className='column-heading'>Our workshop in Frederikssund, Denmark</p>
                     <div className="contact-info">
                         <div className="address-column">
                             <p><FaMapMarkerAlt /></p>
@@ -37,13 +63,13 @@ const Contact = () => {
                 </div>
             </div>
             <div className="contact-form-container">
-                <h2 className='column-heading'>Or leave us a message</h2>
+                <p className='column-heading'>Or just leave us a message</p>
                 <ContactForm />
             </div>
         </div>
     );
 };
 
-
 export default Contact;
+
 

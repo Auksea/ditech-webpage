@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios'; // Import Axios library
+import axios from 'axios';
 import './ContactForm.css';
 
 const ContactForm = () => {

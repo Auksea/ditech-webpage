@@ -1,30 +1,141 @@
 .about-container {
-    text-align: left;
-    margin-left: 50px;
-  }
-
-  .first-heading {
-    color: gray;
-    font-size: 20px;
-    margin-top: 60px;
-  }
+  text-align: left;
+  margin-left: 60px;
   
-  .second-heading {
+}
+
+.first-heading {
+    color: gray;
+    font-size: 30px;
+    text-align: start;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.second-heading {
     color: #20B2AA;
-    font-size: 40px;
-    margin-bottom: 60px;
-    margin-top: 20px;
-  }
+    font-size: 58px;
+    text-align: start;
+    margin-bottom: 100px;
+}
 
-  .mission-block {
-    text-align: center;
-  }
+.mission-block {
+  text-align: center;
+}
 
-  .mission-block h2 {
-    color: #20B2AA;
-    font-size: 39px;
-  }
+.mission-block h2 {
+  color: black;
+  font-size: 39px;
+}
 
-  .mission-text {
-    font-size: 25px;
+.block-heading-mission{
+  color: #20B2AA;
+  font-size: 45px;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.mission-text {
+  font-size: 20px;
+}
+
+.values-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.block-heading-values {
+  font-size: 45px;
+  color: #20B2AA;
+  margin-bottom: 60px;
+  width: 100%;
+  text-align: start;
+}
+
+.value {
+  width: calc(25% - 40px);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.value h3 {
+  color: #20B2AA;
+  font-size: 24px;
+}
+
+.value p {
+  font-size: 18px;
+}
+
+.experience-block {
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  margin-top: 120px;
+  margin-bottom: 100px;
+  margin-right: 90px;
+}
+
+.experience-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.block-heading-exp {
+  font-size: 45px;
+  color: #20B2AA;
+  margin-bottom: 80px;
+  width: 90%;
+  text-align: end;
+  margin-left: 60px;
+}
+
+.experience-image {
+  flex: 1;
+  margin-right: 80px;
+  max-width: 380px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.block-heading-mission::after,
+.block-heading-values::after,
+.block-heading-exp::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #20B2AA;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.block-heading-mission::after {
+  margin-left: calc(50% - 50px);
+}
+
+.block-heading-values::after {
+  margin-left: 0;
+}
+
+.block-heading-exp::after {
+  margin-left: calc(100% - 70px);
+}
+
+.slide-from-left {
+  animation: slideFromLeft 2.5s ease-out forwards;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

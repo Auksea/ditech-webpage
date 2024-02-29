@@ -1,42 +1,71 @@
 .contact-page-container {
-    margin-bottom: 80px;
-    margin-top: 80px;
-    text-align: center;
-  }
+  margin-bottom: 80px;
+  margin-top: 80px;
+  text-align: center;
+}
 
-  .column-heading {
-    color: #20B2AA;
-    font-size: 40px;
-    font-style: bold;
-    text-align: center;
-    margin-bottom: 60px;
-  }
+.column-heading {
+  color: #20B2AA;
+  font-size: 40px;
+  font-style: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideFromLeft 0.5s ease-out forwards;
+}
 
-  .columns-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .contact-info-column,
-  .map-column {
-    flex: 1;
-    padding: 20px;
-  }
+.column-heading::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background-color: #20B2AA;
+}
 
-  .contact-info-column {
-    font-size: 17px;
-    text-align: center;
-  }
+.columns-container {
+  display: flex;
+  justify-content: space-around;
+}
 
-  .contact-info {
-    display: flex;
+.contact-info-column,
+.map-column {
+  flex: 1;
+  padding: 30px;
+}
+
+.contact-info-column {
+  font-size: 17px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
 }
 
 .address-column,
 .phone-email-column {
-    flex: 1;
-    padding: 0 5px;
+  flex: 1;
+  padding: 0 5px;
 }
+
+
+@keyframes slideFromLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
   
   
   

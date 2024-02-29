@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Dropdown } from 'react-bootstrap';
 import './Header.css';
 
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
         headerImage = "/pics/example8.jpg";
     } else if (isAboutPage) {
         headerText = "About Us";
-        headerImage = "/pics/example6.jpg";
+        headerImage = "/pics/example9.jpg";
     } else {
         headerText = "We offer specialized services to MAN B&W two-stroke engines";
         headerImage = "/pics/example4.jpg";
@@ -44,13 +45,23 @@ const Header = () => {
                             <li className="nav-item active">
                                 <Link className="nav-link" to="/">Home</Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item active">
                                 <Link className="nav-link" to="/about">About</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/services">Services</Link>
+                            <li>
+                                <Dropdown>
+                                    <Dropdown.Toggle id="dropdown-basic" className='nav-link'>
+                                    Services
+                                    </Dropdown.Toggle>
+                                    <Dropdown.Menu className="custom-dropdown-menu">
+                                    <Dropdown.Item as={Link} to="/maintenance-ecs">Maintenance of Engine Control System (ECS)</Dropdown.Item>
+                                    <Dropdown.Item as={Link} to="/troubleshooting">Troubleshooting</Dropdown.Item>
+                                    <Dropdown.Item as={Link} to="/performance">Performance optimization</Dropdown.Item>
+                                    <Dropdown.Item as={Link} to="/modification">Modification of cylinder lubricators (ME/Alpha)</Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item active">
                                 <Link className="nav-link" to="/contact">Contact</Link>
                             </li>
                         </ul>
@@ -62,6 +73,8 @@ const Header = () => {
 };
 
 export default Header;
+
+
 
 
 

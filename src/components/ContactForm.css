@@ -1,10 +1,10 @@
 .contact-form-container {
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     border: none;
 }
 

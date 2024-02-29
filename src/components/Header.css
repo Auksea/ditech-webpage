@@ -7,7 +7,7 @@
 
 .heading-container {
   position: absolute;
-  top: 50%; /* Adjusted to be centered vertically */
+  top: 50%;
   left: 49%;
   transform: translate(-80%, -50%);
   text-align: start;
@@ -27,11 +27,11 @@
 @keyframes slideInFromTop {
   0% {
     opacity: 0;
-    transform: translateY(-140px);
+    transform: translateX(-100%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -66,4 +66,18 @@
   width: 100%;
   height: auto;
 }
+
+.custom-dropdown-menu {
+  background-color: transparent !important; /* Transparent background */
+  border: none !important; /* Remove border */
+}
+
+.custom-dropdown-menu .dropdown-item {
+  color: black !important; /* Text color */
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa !important; /* Background color on hover */
+}
+
 
