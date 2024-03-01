@@ -15,12 +15,12 @@
 }
 
 .heading-container.contact-page {
-  top: 45%; /* Made for Contact page */
+  top: 45%;
   left: 55%;
 }
 
 .heading-container.about-page {
-  top: 45%; /* Made for About page */
+  top: 45%;
   left: 55%;
 }
 
@@ -56,10 +56,13 @@
   margin-left: auto;   
 }
 
-.navbar-nav .nav-link {
-  font-weight: bold;
-  font-size: 22px;
+.navbar-nav .nav-link,
+.custom-dropdown-toggle {
+  position: relative;
+  display: inline-block;
   color: black;
+  font-weight: bold;
+  font-size: large;
 }
 
 .header-image {
@@ -67,17 +70,48 @@
   height: auto;
 }
 
+.custom-dropdown-toggle {
+  border: none !important;
+  background-color: transparent !important;
+  color: black !important;
+  padding-right: 0 !important;
+  outline: none !important;
+}
+
 .custom-dropdown-menu {
-  background-color: transparent !important; /* Transparent background */
-  border: none !important; /* Remove border */
+  margin-top: 20px !important;
 }
 
 .custom-dropdown-menu .dropdown-item {
-  color: black !important; /* Text color */
+  font-size: 13px !important;
 }
 
-.custom-dropdown-menu .dropdown-item:hover {
-  background-color: #f8f9fa !important; /* Background color on hover */
+.custom-dropdown-toggle:focus {
+  box-shadow: none !important;
 }
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
