@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const Home = () => {
     return (
-        <div className="container">
+        <div className="home-container">
             <h2 className="section-title">What We Offer</h2>
             <p className="section-description">We are specialists in ME-C, ME-B and all dual fuel engines</p>
             <div className="row">
@@ -41,12 +41,11 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            {/* Carousel */}
             <Carousel>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work1.jpeg`}
+                        src={`${process.env.PUBLIC_URL}/pics/work19.jpg`}
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -91,7 +90,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work7.jpeg`}
+                        src={`${process.env.PUBLIC_URL}/pics/work1.jpeg`}
                         alt="Sixth slide"
                     />
                     <Carousel.Caption>

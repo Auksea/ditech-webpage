@@ -16,18 +16,6 @@
   animation: slideFromLeft 0.5s ease-out forwards;
 }
 
-.column-heading::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 2px;
-  background-color: #20B2AA;
-}
-
 .columns-container {
   display: flex;
   justify-content: space-around;

@@ -1,0 +1,33 @@
+.imageForCylinderPage1 {
+    width: 700px;
+    height: 450px;
+    margin-top: 55px;
+}
+
+.imageForCylinderPage2 {
+    width: 700px;
+    height: 450px;
+}
+
+.section-title-for-cylinderPage1{
+    color: gray;
+    font-size: 30px;
+    text-align: start;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.section-title-for-cylinderPage2{
+    color:#20B2AA;
+    font-size: 50px;
+    text-align: start;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.cylinder-text {
+    text-align: start;
+    margin-left: 50px;
+    padding: 10px;
+    font-size: 20px;
+}
