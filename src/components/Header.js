@@ -11,6 +11,26 @@ const Header = () => {
     const isAboutPage = location.pathname === '/about';
     const isPreDockingServicesPage = location.pathname === '/pre-docking';
     const isCylinderMeasurementPage = location.pathname === '/cylinder-measurement';
+    const isAlphaLubricationPage = location.pathname === '/alpha-system';
+    const isDockingServicesPage = location.pathname === '/docking-services';
+    const isEngineeringServicesPage = location.pathname === '/engineering-services';
+    const isPerformanceMeasurementPage = location.pathname === '/performance-measurement';
+    const isPressureMeasurePage = location.pathname === '/pressure-measure';
+    const isOnBoardOverhaulPage = location.pathname === '/onboard-overhaul';
+    const isHealthCheckPage = location.pathname === '/health-check';
+    const isLargeRepairPage = location.pathname === '/large-repair';
+    const isAdjustmentValves = location.pathname === '/adjustment-valves';
+    const isReconditionValvesPage = location.pathname === '/recondition-valves';
+    const isOverhaulExhaustPage = location.pathname === '/overhoal-exhaust';
+    const isOverhaulFuelPage = location.pathname === '/overhoal-fuel-boosters';
+    const isGeneralMaintenancePage = location.pathname === '/general-maintenance';
+    const isPumpOverhaulPage = location.pathname === '/pump-overhaul';
+    const isSupplyEnginePage = location.pathname === '/supply-engine';
+    const isMEenginesPage = location.pathname === '/ME-MC-engines';
+    const isShaPoliPage = location.pathname === '/shaPoli';
+    const isDeRatingPage = location.pathname === '/de-rating';
+    const isTroubleShootingPage = location.pathname === '/trouble-shooting';
+    const isMEtrainingPage = location.pathname === '/ME-training';
 
     const [showSublist, setShowSublist] = useState(false);
 
@@ -37,7 +57,69 @@ const Header = () => {
     } else if (isCylinderMeasurementPage) {
         headerText = "Cylinder Measurements";
         headerImage = "/pics/work9.jpeg";
-    } 
+    } else if (isAlphaLubricationPage) {
+        headerText = "Alpha Lubricator System";
+        headerImage = "/pics/Lubricator.PNG";
+    } else if (isDockingServicesPage) {
+        headerText = "Docking Service for MC/MC-C ME-B, ME-C, ME-GI, ME-GA, LGIP, LGIM";
+        headerImage = "/pics/example10.jpg";
+    } else if (isEngineeringServicesPage) {
+        headerText = "Engineering Services for Retrofit";
+        headerImage = "/pics/example3.jpg";
+    } else if (isPerformanceMeasurementPage) {
+        headerText = "Performance Measurement and evaluation";
+        headerImage = "/pics/work15.jpg";
+    } else if (isPressureMeasurePage) {
+        headerText = "Real time Pressure measuring instrument";
+        headerImage = "/pics/water2.jpg";
+    }else if (isOnBoardOverhaulPage) {
+        headerText = "On board overhaul of FIVA/ELFI/ELVA";
+        headerImage = "/pics/water1.jpg";
+    }else if (isHealthCheckPage) {
+        headerText = "Health check of engines";
+        headerImage = "/pics/water3.jpg";
+    }else if (isLargeRepairPage) {
+        headerText = "Large Repair Service";
+        headerImage = "/pics/Repair.jpg";
+    }else if (isAdjustmentValves) {
+        headerText = "Overhaul, testing and adjustment of fuel injection valves";
+        headerImage = "/pics/Repair.jpg";
+    }else if (isReconditionValvesPage) {
+        headerText = "Reconditioning of exhaust valve spindles and seats";
+        headerImage = "/pics/Repair.jpg";
+    }else if (isOverhaulExhaustPage) {
+        headerText = "Overhaul of Exhaust valves onboard and in workshop";
+        headerImage = "/pics/dock.jpg";
+    }else if (isOverhaulFuelPage) {
+        headerText = "Overhaul of Fuel boosters";
+        headerImage = "/pics/dock1.jpg";
+    }else if (isGeneralMaintenancePage) {
+        headerText = "General Maintenance";
+        headerImage = "/pics/dock2.jpg";
+    }else if (isPumpOverhaulPage) {
+        headerText = "HPS pump workshop overhauling";
+        headerImage = "/pics/dock3.jpg";
+    }else if (isSupplyEnginePage) {
+        headerText = "Supply of engine driven hydraulic pumps and proportional valves made by Danfoss";
+        headerImage = "/pics/dock4.jpg";
+    }else if (isMEenginesPage) {
+        headerText = "EEXI-EPL ME/MC engines";
+        headerImage = "/pics/dock5.jpg";
+    }else if (isShaPoliPage) {
+        headerText = "Shaft Power Limitation";
+        headerImage = "/pics/dock6.jpg";
+    }else if (isDeRatingPage) {
+        headerText = "De-rating";
+        headerImage = "/pics/dock7.jpg";
+    }else if (isTroubleShootingPage) {
+        headerText = "Trouble Shooting";
+        headerImage = "/pics/water1.jpg";
+    }else if (isMEtrainingPage) {
+        headerText = "Onboard ME Training";
+        headerImage = "/pics/training.jpg";
+    }
+
+
     else {
         headerText = "We offer specialized services to MAN B&W two-stroke engines";
         headerImage = "/pics/example4.jpg";

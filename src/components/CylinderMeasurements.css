@@ -1,12 +1,7 @@
-.imageForCylinderPage1 {
+.imageForCylinderPage3 {
     width: 700px;
     height: 450px;
     margin-top: 55px;
-}
-
-.imageForCylinderPage2 {
-    width: 700px;
-    height: 450px;
 }
 
 .section-title-for-cylinderPage1{
@@ -28,6 +23,10 @@
 .cylinder-text {
     text-align: start;
     margin-left: 50px;
-    padding: 10px;
+    padding: 5px;
     font-size: 20px;
+}
+
+.row {
+    margin-bottom: 80px;
 }

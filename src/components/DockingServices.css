@@ -1,0 +1,58 @@
+.headingofDocking {
+    color: gray;
+    font-size: 30px;
+    text-align: start;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.secondaryHeadingofDocking {
+    color:#20B2AA;
+    font-size: 50px;
+    text-align: start;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+}
+  
+.services-column {
+    flex: 1;
+    max-width: 45%;
+    margin: 10px;
+}
+  
+  
+.services-column h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+  
+.services-list {
+    list-style-type: circle;
+    padding: 0;
+}
+  
+.services-list li {
+    margin-bottom: 5px;
+}
+
+.services-column p {
+    font-size: 15px;
+}
+
+.extraParagraph {
+    font-style: italic;
+}
+  

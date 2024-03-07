@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 const Home = () => {
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prevIndex) => (prevIndex === 5 ? 0 : prevIndex + 1));
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className="home-container">
             <h2 className="section-title">What We Offer</h2>
@@ -41,11 +51,11 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Carousel>
+            <Carousel activeIndex={index} onSelect={() => {}} controls={false} indicators={false}>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work19.jpg`}
+                        src={`${process.env.PUBLIC_URL}/pics/work12.jpeg`}
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -54,7 +64,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work2.jpeg`}
+                        src={`${process.env.PUBLIC_URL}/pics/work5.jpeg`}
                         alt="Second slide"
                     />
                     <Carousel.Caption>
@@ -63,7 +73,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work3.jpeg`}
+                        src={`${process.env.PUBLIC_URL}/pics/work14.jpeg`}
                         alt="Third slide"
                     />
                     <Carousel.Caption>
@@ -72,7 +82,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work5.jpeg`}
+                        src={`${process.env.PUBLIC_URL}/pics/work10.jpeg`}
                         alt="Fourth slide"
                     />
                     <Carousel.Caption>
@@ -81,7 +91,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work6.jpeg`}
+                        src={`${process.env.PUBLIC_URL}/pics/work20.jpg`}
                         alt="Fifth slide"
                     />
                     <Carousel.Caption>
@@ -90,7 +100,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work1.jpeg`}
+                        src={`${process.env.PUBLIC_URL}/pics/work19.jpg`}
                         alt="Sixth slide"
                     />
                     <Carousel.Caption>
@@ -102,4 +112,5 @@ const Home = () => {
 };
 
 export default Home;
+
 
