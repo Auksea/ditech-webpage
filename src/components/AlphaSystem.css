@@ -21,12 +21,13 @@
   text-align: start;
   margin-top: 60px;
   margin-left: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 80px;
 }
 
 .row {
   display: flex;
   margin-left: 60px;
+  font-size: 18px;
 }
 
 .row-item {
@@ -57,6 +58,8 @@
 
 .last-images-container p {
   text-align: center;
+  font-size: 18px;
+  padding: 20px;
 }
 
 .Lubricatorlist {

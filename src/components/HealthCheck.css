@@ -6,3 +6,8 @@
     margin-bottom: 40px;
     margin-top: 100px;
 }
+
+.health-check p {
+    font-size: 18px;
+    margin-left: 50px;
+}

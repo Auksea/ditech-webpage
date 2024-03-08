@@ -6,7 +6,9 @@ import './Header.css';
 const Header = () => {
     const [animated, setAnimated] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
     const location = useLocation();
+
     const isContactPage = location.pathname === '/contact';
     const isAboutPage = location.pathname === '/about';
     const isPreDockingServicesPage = location.pathname === '/pre-docking';
@@ -78,9 +80,6 @@ const Header = () => {
     }else if (isHealthCheckPage) {
         headerText = "Health check of engines";
         headerImage = "/pics/water3.jpg";
-    }else if (isLargeRepairPage) {
-        headerText = "Large Repair Service";
-        headerImage = "/pics/Repair.jpg";
     }else if (isAdjustmentValves) {
         headerText = "Overhaul, testing and adjustment of fuel injection valves";
         headerImage = "/pics/Repair.jpg";
@@ -92,7 +91,7 @@ const Header = () => {
         headerImage = "/pics/dock.jpg";
     }else if (isOverhaulFuelPage) {
         headerText = "Overhaul of Fuel boosters";
-        headerImage = "/pics/dock1.jpg";
+        headerImage = "/pics/water3.jpg";
     }else if (isGeneralMaintenancePage) {
         headerText = "General Maintenance";
         headerImage = "/pics/dock2.jpg";
@@ -117,6 +116,9 @@ const Header = () => {
     }else if (isMEtrainingPage) {
         headerText = "Onboard ME Training";
         headerImage = "/pics/training.jpg";
+    }else if (isLargeRepairPage) {
+        headerText = "Large Repair of Engines";
+        headerImage = "/pics/Repair.jpg";
     }
 
 

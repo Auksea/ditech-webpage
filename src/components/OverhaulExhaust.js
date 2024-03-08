@@ -3,7 +3,7 @@ import './OverhaulExhaust.css';
 
 function OverhaulExhaustt() {
   return (
-    <div className="">
+    <div className="overhaul-exhaust">
       <h1 className="headingofOverhaulExh">Overhaul of Exhaust valves onboard and in workshop</h1>
       <p></p>
       <p p className='extraParagraph'>

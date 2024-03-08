@@ -3,7 +3,7 @@ import './ReconditionValves.css';
 
 function ReconditionValves() {
   return (
-    <div className="">
+    <div className="recondition-valves">
       <h1 className="headingofRecondition">Reconditioning of exhaust valve spindles and seats</h1>
       <p></p>
       <p p className='extraParagraph'>

@@ -6,3 +6,31 @@
     margin-bottom: 40px;
     margin-top: 100px;
 }
+
+.pressure-measure {
+    text-align: start;
+}
+
+
+.contentofPressure {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    margin-left: 50px;
+}
+  
+.text-columnofPressure {
+    flex: 1;
+    text-align: start;
+    margin-right: 20px;
+}
+  
+.image-column {
+    flex: 1;
+}
+  
+.image-column img {
+    width: 100%;
+    height: auto
+}
+  

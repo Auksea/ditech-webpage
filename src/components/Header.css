@@ -102,6 +102,44 @@
   color: #20B2AA !important;
 }
 
+@media (max-width: 768px) {
+  .heading-container {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .navbar-nav {
+    margin-left: 0;
+  }
+
+  .navbar-toggler {
+    border: none;
+    background-color: transparent !important;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    right: 0;
+    top: 60%;
+    width: 300px;
+    background-color: transparent;
+    border-radius: 4px;
+  }
+
+  .navbar-nav .nav-link,
+  .custom-dropdown-toggle {
+    display: block;
+    padding: .5rem 1rem;
+  }
+}
+
+
 
 
 
