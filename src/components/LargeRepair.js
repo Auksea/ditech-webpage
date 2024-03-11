@@ -14,9 +14,9 @@ function LargeRepair() {
             Contact us today to explore how our engineering services can elevate your fleet's performance and efficiency.
           </p>
         </div>
-        <div className="image-column">
+        {/*<div className="image-column">
           <img src="your-image-url.jpg" alt="LRepair Image" />
-        </div>
+  </div>*/}
       </div>
     </div>
   );

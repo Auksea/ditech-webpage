@@ -15,7 +15,7 @@ function AdjustmentValves() {
           </p>
         </div>
         <div className="image-column">
-          <img src="your-image-url.jpg" alt="AdjustmentV Image" />
+          <img src="/pics/parts.jpg" alt="AdjustmentV Image" />
         </div>
       </div>
     </div>

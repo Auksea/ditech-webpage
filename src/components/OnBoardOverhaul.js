@@ -25,9 +25,8 @@ function OnBoardOverhaul() {
       </p>
         </div>
         <div className="image-column">
-          <img src="your-image-url.jpg" alt="Onboard Overhaul" />
+          <img src="/pics/example2.jpg" alt="Onboard Overhaul" />
         </div>
-        
       </div>
     </div>
   );

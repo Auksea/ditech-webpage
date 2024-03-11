@@ -26,6 +26,7 @@ import ShaPoLi from './components/ShaPoli';
 import DeRating from './components/DeRating';
 import TroubleShooting from './components/TroubleShooting';
 import MEtraining from './components/MEtraining';
+import FuelGasSupply from './components/FuelGasSupply';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
                     <Route path="/ShaPoli" element={<ShaPoLi />} />
                     <Route path="/de-rating" element={<DeRating />} />
                     <Route path="/trouble-shooting" element={<TroubleShooting />} />
+                    <Route path="/fuel-gas-supply" element={<FuelGasSupply />} />
                     <Route path="/ME-training" element={<MEtraining />} />
                 </Routes>
                 <Footer />
