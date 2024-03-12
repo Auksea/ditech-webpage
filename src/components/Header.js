@@ -10,6 +10,7 @@ const Header = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [showCurtainMenu, setShowCurtainMenu] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+    const [showMobileServices, setShowMobileServices] = useState(false);
 
     const location = useLocation();
 
@@ -18,12 +19,21 @@ const Header = () => {
         setShowCurtainMenu(!showCurtainMenu);
         e.stopPropagation();
     };
+
+    const handleToggleServices = () => {
+        setShowMobileServices(!showMobileServices);
+        setShowCurtainMenu(!showMobileServices);
+    };
     
     const handleExitMenu = () => {
         setIsDropdownOpen(false);
         setShowCurtainMenu(false); 
     };
 
+    const handleMobileServicesClick = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
+    
     useEffect(() => {
         setAnimated(true);
     }, []);
@@ -45,6 +55,13 @@ const Header = () => {
             window.removeEventListener('resize', setResponsiveness);
         };
     }, []);
+
+    useEffect(() => {
+        if (showCurtainMenu) {
+            setShowMobileServices(false);
+        }
+    }, [showCurtainMenu]);
+    
 
     const isContactPage = location.pathname === '/contact';
     const isAboutPage = location.pathname === '/about';
@@ -72,8 +89,6 @@ const Header = () => {
     const isFuelGasSupplyPage = location.pathname === '/fuel-gas-supply';
     const isMEtrainingPage = location.pathname === '/ME-training';
 
-    
-
     let headerText, headerImage;
 
     if (isContactPage) {
@@ -86,7 +101,7 @@ const Header = () => {
         headerText = "Pre-Docking Services";
         headerImage = "/pics/example6.jpg";
     } else if (isCylinderMeasurementPage) {
-        headerText = "Reduce Downtime and Unscheduled repirs";
+        headerText = "Cylinder Measurement";
         headerImage = "/pics/dock3.jpg";
     } else if (isAlphaLubricationPage) {
         headerText = "Alpha Lubricator System";
@@ -152,8 +167,6 @@ const Header = () => {
         headerText = "Fuel Gas Supply";
         headerImage = "/pics/backgrnd5.jpg";
     }
-
-
     else {
         headerText = "We offer specialized services to MAN B&W two-stroke engines";
         headerImage = "/pics/example4.jpg";
@@ -237,7 +250,47 @@ return (
                 <ul className="curtain-menu-items">
                     <li><Link to="/" onClick={handleExitMenu}>Home</Link></li>
                     <li><Link to="/about" onClick={handleExitMenu}>About</Link></li>
-                    <li><Link to="/services" onClick={handleExitMenu}>Services</Link></li>
+                    <li>
+                    <button
+                        className="accordion-button collapsed custom-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                        onClick={handleToggleServices}>
+                        Services
+                    </button>
+                        <div
+                            id="flush-collapseOne"
+                            className={`panel collapse ${showMobileServices ? 'show' : ''}`}>
+                                <ul>
+                                    <li><Link to="/pre-docking" onClick={handleExitMenu}>Pre-Docking inspection</Link></li>
+                                    <li><Link to="/docking-services" onClick={handleExitMenu}>Docking services</Link></li>
+                                    <li><Link to="/cylinder-measurement" onClick={handleExitMenu}>Cylinder liner measurement</Link></li>
+                                    <li><Link to="/engineering-services" onClick={handleExitMenu}>Engineering services for retrofit</Link></li>
+                                    <li><Link to="/alpha-system" onClick={handleExitMenu}>Alpha lubricator system</Link></li>
+                                    <li><Link to="/performance-measurement" onClick={handleExitMenu}>Performance measurement and evaluation</Link></li>
+                                    <li><Link to="/pressure-measure" onClick={handleExitMenu}>Real time Pressure measuring instrument</Link></li>
+                                    <li><Link to="/onboard-overhaul" onClick={handleExitMenu}>Onboard overhaul of FIVA/ELFI/ELVA</Link></li>
+                                    <li><Link to="/health-check" onClick={handleExitMenu}>Health check of engines</Link></li>
+                                    <li><Link to="/large-repair" onClick={handleExitMenu}>Large repair</Link></li>
+                                    <li><Link to="adjustment-valves" onClick={handleExitMenu}>Overhaul, testing and adjustment of fuel injection valves</Link></li>
+                                    <li><Link to="/recondition-valves" onClick={handleExitMenu}>Reconditioning of exhaust valve spindles and seats</Link></li>
+                                    <li><Link to="/overhoal-exhaust" onClick={handleExitMenu}>Overhaul of Exhaust valves onboard and in workshop</Link></li>
+                                    <li><Link to="/overhoal-fuel-boosters" onClick={handleExitMenu}>Overhaul of Fuel boosters/Exhaust valve actuators</Link></li>
+                                    <li><Link to="/general-maintenance" onClick={handleExitMenu}>General maintenance (Piston pull, bearing replacement etc)</Link></li>
+                                    <li><Link to="/pump-overhaul" onClick={handleExitMenu}>FIVA, HPS pump workshop overhauling (ME-C/ME-B)</Link></li>
+                                    <li><Link to="/supply-engine" onClick={handleExitMenu}>Supply of engine driven hydraulic pumps, made by Danfoss (Eaton)</Link></li>
+                                    <li><Link to="/ME-MC-engines" onClick={handleExitMenu}>EEXI-EPL ME/MC engines</Link></li>
+                                    <li><Link to="/shaPoli" onClick={handleExitMenu}>ShaPoLi (Shaft Power Limitation)</Link></li>
+                                    <li><Link to="/de-rating" onClick={handleExitMenu}>De-rating</Link></li>
+                                    <li><Link to="/trouble-shooting" onClick={handleExitMenu}>Troubleshooting</Link></li>
+                                    <li><Link to="/fuel-gas-supply" onClick={handleExitMenu}>Fuel Gas Supply</Link></li>
+                                    <li><Link to="/ME-training" onClick={handleExitMenu}>Onboard ME Training, also covering dual fuel engines</Link></li>
+                                </ul>
+                        </div>
+                    </li>
                     <li><Link to="/contact" onClick={handleExitMenu}>Contact</Link></li>
                 </ul>
             </div>

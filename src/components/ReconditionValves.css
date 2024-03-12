@@ -10,3 +10,14 @@
 .recondition-valves p {
     margin-left: 50px;
 }
+
+@media screen and (max-width: 950px) {
+    .headingofRecondition {
+        font-size: 27px;
+        margin-left: 20px;
+    }
+
+    .recondition-valves p {
+        margin-left: 20px;
+    }
+}

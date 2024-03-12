@@ -10,3 +10,14 @@
 .overhaul-fuel p {
     margin-left: 50px;
 }
+
+@media screen and (max-width: 950px) {
+    .headingofOverhaulFuel {
+        font-size: 27px;
+        margin-left: 20px;
+    }
+
+    .overhaul-fuel p {
+        margin-left: 20px;
+    }
+}

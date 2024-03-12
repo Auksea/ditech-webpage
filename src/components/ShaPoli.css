@@ -14,3 +14,16 @@
     margin-left: 50px;
     margin-top: 80px;
 }
+
+@media screen and (max-width: 950px) {
+    .headingofShaPoli {
+        font-size: 27px;
+        margin-left: 20px;
+    }
+
+    .contentOfShaPoli {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+}

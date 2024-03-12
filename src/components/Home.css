@@ -38,4 +38,26 @@
     object-fit: contain;
 }
 
+@media only screen and (max-width: 950px) {
+    .section-title {
+        font-size: 17px;
+        margin-left: 30px;
+    }
+
+    .section-description {
+        font-size: 28px;
+        margin-left: 30px;
+    }
+
+    .card {
+        font-size: 16px;
+        margin-left: 30px;
+    }
+
+    .carousel-item img {
+        height: auto;
+        width: 100%;
+    }
+}
+
 

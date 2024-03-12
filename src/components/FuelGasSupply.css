@@ -11,3 +11,14 @@
     font-size: 18px;
     margin-left: 50px;
 }
+
+@media screen and (max-width: 950px) {
+    .headingofFuelGasSupply {
+        font-size: 27px;
+        margin-left: 20px;
+    }
+
+    .contentOfFuelGasSupply {
+        margin-left: 20px;
+    }
+}

@@ -13,3 +13,15 @@
     margin-left: 50px;
     margin-top: 80px;
 }
+
+@media screen and (max-width: 950px) {
+    .headingofTroubleShooting {
+        font-size: 27px;
+        margin-left: 20px;
+    }
+
+    .contentOfTroubleShooting {
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+}

@@ -37,5 +37,36 @@
     width: 90%;
     height: 90%;
 }
+
+@media screen and (max-width: 950px) {
+    .headingofEngineering {
+        font-size: 28px;
+    }
+    
+
+    .headingofEngineering {
+        margin-left: 20px;
+    }
+
+    .engineering-services p {
+        margin-left: 20px;
+    }
+
+    .contentofEng {
+        flex-direction: column;
+    }
+
+    .text-columnofEng,
+    .image-column {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image-column img {
+        width: 100%;
+        height: auto;
+    }
+}
   
   

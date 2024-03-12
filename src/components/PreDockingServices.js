@@ -3,9 +3,9 @@ import './PreDockingServices.css';
 
 function PreDockingServices() {
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+    <div className="column-container">
       <div className="column">
-      <div className="column-heading">
+        <div className="column-heading">
           <h2>MC/MC-C Series</h2>
         </div>
         <p className='heading-list-secondary'>Carried out by MAN PrimeServ superintendent engineers</p>
@@ -44,8 +44,8 @@ function PreDockingServices() {
         </ul>
       </div>
       <div className="column">
-      <div className="column-heading">
-          <h2> ME/ME-C series:</h2>
+        <div className="column-heading">
+          <h2>ME/ME-C Series</h2>
         </div>
         <p className='heading-list-secondary'>Carried out by MAN PrimeServ superintendent engineer</p>
         <p className='heading-list-secondary'>Visual inspection of the following:</p>
@@ -84,8 +84,8 @@ function PreDockingServices() {
         </ul>
       </div>
       <div className="column">
-      <div className="column-heading">
-          <h2> ME-B series:</h2>
+        <div className="column-heading">
+          <h2>ME-B Series</h2>
         </div>
         <p className='heading-list-secondary'>Carried out by MAN PrimeServ superintendent engineers</p>
         <p className='heading-list-secondary'>Visual inspection of the following:</p>
@@ -126,5 +126,6 @@ function PreDockingServices() {
     </div>
   );
 }
+
 
 export default PreDockingServices;

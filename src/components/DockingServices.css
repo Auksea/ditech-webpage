@@ -58,5 +58,32 @@
     font-style: italic;
 }
 
+@media screen and (max-width: 950px) {
+    .headingofDocking {
+        font-size: 17px;
+        text-align: start;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+    
+    .secondaryHeadingofDocking {
+        font-size: 28px;
+        text-align: start;
+        margin-left: 50px;
+        margin-bottom: 80px;
+    }
+
+    .headingofDocking {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+    }
+    
+    .secondaryHeadingofDocking {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .services-column {
+        max-width: 100%; /* Adjust column width for smaller screens */
+    }
+}
   
   

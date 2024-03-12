@@ -34,3 +34,27 @@
     width: 100%;
     height: auto;
 }
+
+@media screen and (max-width: 950px) {
+    .headingofOverhaul {
+        font-size: 27px;
+        margin-left: 20px;
+    }
+
+    .contentofOverhaul {
+        flex-direction: column;
+    }
+
+
+    .text-columnofOverhaul,
+    .image-column {
+        flex: 1;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .image-column {
+        margin-right: 0;
+        order: 1;
+    }
+}

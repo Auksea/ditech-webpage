@@ -30,3 +30,35 @@
 .row {
     margin-bottom: 80px;
 }
+
+@media screen and (max-width: 950px) {
+    .section-title-for-cylinderPage1{
+        font-size: 17px;
+    }
+    
+    .section-title-for-cylinderPage2{
+        font-size: 28px;
+    }
+
+    .imageForCylinderPage3 {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .section-title-for-cylinderPage1 {
+        margin-left: 20px;
+    }
+
+    .section-title-for-cylinderPage2 {
+        margin-left: 20px;
+    }
+
+    .cylinder-text {
+        margin-left: 20px;
+    }
+
+    .row {
+        margin-bottom: 40px;
+    }
+}

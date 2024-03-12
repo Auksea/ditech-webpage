@@ -54,6 +54,23 @@
   }
 }
 
+@media only screen and (max-width: 950px) {
+  .column-heading {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .columns-container {
+    flex-direction: column;
+  }
+
+  .contact-info-column,
+  .map-column {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+}
   
   
   

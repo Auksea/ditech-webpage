@@ -32,4 +32,26 @@
     width: 100%;
     height: auto;
 }
+
+@media screen and (max-width: 950px) {
+    .headingofLargeRepair {
+        font-size: 27px;
+        margin-left: 20px;
+    }
+
+    .contentofRepair {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .text-columnofRepair,
+    .image-column {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .image-column {
+        margin-right: 20px;
+    }
+}
   

@@ -1,7 +1,7 @@
 .header-wrapper {
   background-size: cover;
   background-position: center;
-  height: 1000px;
+  height: 100vh;
   position: relative;
 }
 
@@ -9,20 +9,18 @@
   position: absolute;
   top: 50%;
   left: 49%;
-  transform: translate(-80%, -50%);
+  transform: translate(-50%, -50%);
   text-align: start;
   z-index: 1;
+  width: 85%;
+  max-width: 2000px;
 }
 
 .heading-container.contact-page {
-  position: absolute;
-  top: 50%;
   left: 49%;
 }
 
 .heading-container.about-page {
-  position: absolute;
-  top: 50%;
   left: 49%;
 }
 
@@ -38,7 +36,7 @@
 }
 
 .heading {
-  font-size: 70px;
+  font-size: 60px;
   color: black;
   animation: slideInFromTop 1s ease-in-out;
 }
@@ -46,30 +44,25 @@
 .company-icon {
   height: 150px;
   width: auto;
-  margin-top: 40px;
   mix-blend-mode: multiply;
+  margin-top: 5vw;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .navbar.navbar-light.bg-light {
   background-color: transparent !important;
-}
-
-.navbar-nav {
-  margin-left: auto;   
+  position: absolute;
+  top: 90px;
+  right: 40px;
 }
 
 .navbar-nav .nav-link,
 .custom-dropdown-toggle {
-  position: relative;
-  display: inline-block;
   color: black;
   font-weight: bold;
   font-size: large;
-}
-
-.header-image {
-  width: 100%;
-  height: auto;
 }
 
 .custom-dropdown-toggle {
@@ -104,44 +97,42 @@
   color: #20B2AA !important;
 }
 
+.navbar-brand .company-icon {
+  display: none;
+}
 
 @media only screen and (max-width: 950px) {
   .header-wrapper {
     height: 100vh;
+    padding: 20px;
   }
 
   .heading {
-    font-size: 40px;
+      font-size: 30px;
   }
-
-  .company-icon {
-    height: 50px;
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-
-
 
   .curtain-menu-header {
-    position: absolute; 
+    position: absolute;
+    max-height: calc(100vh - 0);
     top: 0;
     left: 0;
-    width: 100%;
+    width: 78%;
     height: 100%;
-    background-color: grey;
+    background-color: #ADD8E6;
     z-index: 1000;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
+    min-height: 100%;
   }
 
-
   .curtain-menu-items {
-    position: relative;
-    transform: translate(-70%, 0%);
     list-style-type: none;
     color: black;
+    margin: 0;
+    padding: 0;
   }
 
   .curtain-menu-items li {
@@ -152,6 +143,31 @@
     color: black;
     text-decoration: none;
     font-size: 35px;
+  }
+
+  .custom-button {
+    font-size: 35px !important;
+  }
+
+  .panel {
+    position: static;
+    max-width: 100px;
+    overflow: auto;
+  }
+
+  .panel ul {
+      padding-left: 0;
+      margin: 0;
+  }
+
+  .panel ul li {
+      margin-bottom: 10px;
+  }
+
+  .panel ul li a {
+      font-size: 14px;
+      color: black;
+      text-decoration: none;
   }
 
   .back-button {
@@ -170,7 +186,24 @@
     width: 20px;
     height: 20px;
   }
+
+  .panel.collapse.show {
+    overflow-y: auto;
+    max-height: 250px;
+  }
+
+  .navbar-toggler {
+    margin-top: -80px;
+  }
+
+  .company-icon {
+    top: 10px;
+    left: 10px;
+    margin-top: 0;
+  }
+  
 }
+
 
 
 

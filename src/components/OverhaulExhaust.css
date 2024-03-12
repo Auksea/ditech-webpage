@@ -10,3 +10,14 @@
 .overhaul-exhaust p {
     margin-left: 50px;
 }
+
+@media screen and (max-width: 950px) {
+    .headingofOverhaulExh {
+        font-size: 27px;
+        margin-left: 20px;
+    }
+
+    .overhaul-exhaust p {
+        margin-left: 20px;
+    }
+}

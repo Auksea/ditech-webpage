@@ -12,3 +12,15 @@
     margin-left: 50px;
     margin-top: 80px;
 }
+
+@media screen and (max-width: 950px) {
+    .headingofMEtraining {
+        font-size: 27px;
+        margin-left: 20px;
+    }
+
+    .contentOfMEtraining {
+        margin-left: 20px; 
+        margin-top: 40px;
+    }
+}

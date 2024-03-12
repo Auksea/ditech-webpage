@@ -33,4 +33,30 @@
     width: 100%;
     height: auto
 }
-  
+
+@media screen and (max-width: 950px) {
+    .headingofPressureMeasure {
+        font-size: 27px;
+    }
+
+    .headingofPressureMeasure {
+        margin-left: 20px;
+    }
+
+    .contentofPressure {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .text-columnofPressure,
+    .image-column {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image-column img {
+        width: 100%;
+        height: auto;
+    }
+}

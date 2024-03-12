@@ -33,5 +33,25 @@
     width: 100%;
     height: auto;
 }
+
+@media screen and (max-width: 950px) {
+    .headingofPerformance {
+        font-size: 27px;
+    }
+
+    .headingofPerformance {
+        margin-left: 20px;
+    }
+
+    .text-columnofPerformance {
+        flex: 1;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .image-column {
+        flex: 1;
+    }
+}
   
   

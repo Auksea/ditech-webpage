@@ -11,3 +11,14 @@
     font-size: 18px;
     margin-left: 50px;
 }
+
+@media screen and (max-width: 950px) {
+    .headingofHealthCkeck {
+        font-size: 27px;
+        margin-left: 20px;
+    }
+
+    .health-check p {
+        margin-left: 20px; 
+    }
+}
