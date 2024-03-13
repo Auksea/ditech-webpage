@@ -176,14 +176,14 @@ const companyLogo = "/pics/Di-Tech-logo.jpg";
 
 return (
     <div className={`header-wrapper ${animated ? 'animated' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}${headerImage})` }}>
+        <Link className="navbar-brand" to="/">
+            <img src={`${process.env.PUBLIC_URL}${companyLogo}`} alt="Company Icon Header" className="company-icon-header" />
+        </Link>
         <div className={`heading-container ${isContactPage ? 'contact-page' : ''} ${isAboutPage ? 'about-page' : ''}`}>
             <h1 className="heading">{headerText}</h1>
         </div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
-                <Link className="navbar-brand" to="/">
-                    <img src={`${process.env.PUBLIC_URL}${companyLogo}`} alt="Company Icon" className="company-icon" />
-                </Link>
                 <button
                     className={`navbar-toggler custom-toggler ${isDropdownOpen ? 'dropdown-open' : ''}`}
                     type="button"

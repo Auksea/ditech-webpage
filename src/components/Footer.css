@@ -5,30 +5,40 @@
     background-color: white;
 }
 
-.column {
+.FooterColumn {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin-top: 80px;
 }
 
-.column img {
-    margin-left: 100px;
-    margin-top: 40px;
-    margin-right: auto;
-    display: block;
+.FooterImgColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.column h4{
+.company-icon-footer {
+    height: auto;
+    max-height: 150px;
+    width: auto;
+    max-width: 100%;
+    
+}
+
+.FooterColumn h4{
     margin-bottom: 10px;
 }
 
-.column p{
+.FooterColumn p{
     font-size: 15px;
 }
 
 @media only screen and (max-width: 950px) {
-    .company-icon {
+    .company-icon-footer {
         height: 80px;
     }
 

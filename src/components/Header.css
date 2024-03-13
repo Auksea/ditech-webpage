@@ -8,20 +8,20 @@
 .heading-container {
   position: absolute;
   top: 50%;
-  left: 49%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: start;
   z-index: 1;
-  width: 85%;
+  width: calc(100% - 240px);
   max-width: 2000px;
 }
 
 .heading-container.contact-page {
-  left: 49%;
+  left: 50%;
 }
 
 .heading-container.about-page {
-  left: 49%;
+  left: 50%;
 }
 
 @keyframes slideInFromTop {
@@ -41,14 +41,14 @@
   animation: slideInFromTop 1s ease-in-out;
 }
 
-.company-icon {
+.company-icon-header {
   height: 150px;
   width: auto;
   mix-blend-mode: multiply;
-  margin-top: 5vw;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 3vw;
+  left: 8vw;
+  z-index: 2;
 }
 
 .navbar.navbar-light.bg-light {
@@ -97,8 +97,8 @@
   color: #20B2AA !important;
 }
 
-.navbar-brand .company-icon {
-  display: none;
+.navbar-brand .company-icon-header {
+  display: block;
 }
 
 @media only screen and (max-width: 950px) {
@@ -196,12 +196,10 @@
     margin-top: -80px;
   }
 
-  .company-icon {
-    top: 10px;
-    left: 10px;
-    margin-top: 0;
+  .company-icon-header {
+    height: 80px;
+    margin-top: 3vw;
   }
-  
 }
 
 
