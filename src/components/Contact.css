@@ -42,6 +42,10 @@
   padding: 0 5px;
 }
 
+.phone-email-column p {
+  margin-top: 20px;
+}
+
 
 @keyframes slideFromLeft {
   from {

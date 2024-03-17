@@ -8,20 +8,28 @@
 .heading-container {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 8vw;
   text-align: start;
   z-index: 1;
-  width: calc(100% - 240px);
-  max-width: 2000px;
+  max-width: calc(100% - 240px);
 }
 
 .heading-container.contact-page {
-  left: 50%;
+  position: absolute;
+  top: 50%;
+  left: 8vw;
+  text-align: start;
+  z-index: 1;
+  max-width: calc(100% - 240px);
 }
 
 .heading-container.about-page {
-  left: 50%;
+  position: absolute;
+  top: 50%;
+  left: 8vw;
+  text-align: start;
+  z-index: 1;
+  max-width: calc(100% - 240px);
 }
 
 @keyframes slideInFromTop {
@@ -104,11 +112,43 @@
 @media only screen and (max-width: 950px) {
   .header-wrapper {
     height: 100vh;
-    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .heading-container {
+    position: absolute;
+    top: 50%;
+    left: 8vw;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: calc(100% - 240px);
+    max-width: 2000px;
   }
 
   .heading {
-      font-size: 30px;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .heading-container.contact-page {
+    position: absolute;
+    top: 50%;
+    left: 8vw;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: calc(100% - 240px);
+    max-width: 2000px;
+  }
+  
+  .heading-container.about-page {
+    position: absolute;
+    top: 50%;
+    left: 8vw;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: calc(100% - 240px);
+    max-width: 2000px;
   }
 
   .curtain-menu-header {
@@ -193,7 +233,7 @@
   }
 
   .navbar-toggler {
-    margin-top: -80px;
+    margin-top: -50px;
   }
 
   .company-icon-header {

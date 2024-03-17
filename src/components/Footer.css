@@ -26,7 +26,6 @@
     max-height: 150px;
     width: auto;
     max-width: 100%;
-    
 }
 
 .FooterColumn h4{
@@ -40,6 +39,7 @@
 @media only screen and (max-width: 950px) {
     .company-icon-footer {
         height: 80px;
+        margin-top: 80px;
     }
 
     .footer {
