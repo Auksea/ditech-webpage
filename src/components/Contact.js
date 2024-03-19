@@ -44,7 +44,7 @@ return (
                         <p>Denmark</p>
                     </div>
                     <div className="phone-email-column">
-                        <p><FaPhone /> +45 24 21 54 51</p>
+                        <p><FaPhone /> +45 24 21 54 51 / +45 25 73 73 66</p>
                         <p><FaEnvelope /> <a href="mailto:service@di-tech.eu">service@di-tech.eu</a></p>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ return (
             <div className="map-column">
                 <iframe
                     title="location-map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.8386851517894!2d12.074831076505058!3d55.848113973119624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46526911cda3211d%3A0x9275de12a68d955f!2sHolmensvej%2024A%2C%203600%20Frederikssund!5e0!3m2!1sen!2sdk!4v1708941259430!5m2!1sen!2sdk"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1396.2758087651682!2d12.076049523857487!3d55.8479180262925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465269a8ba60d623%3A0xe22e44f31e651af3!2sDI-Tech!5e0!3m2!1sen!2sdk!4v1710833904558!5m2!1sen!2sdk"
                     width="600"
                     height="450"
                     style={{ border: 0 }}

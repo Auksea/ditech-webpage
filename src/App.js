@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -30,10 +31,16 @@ import FuelGasSupply from './components/FuelGasSupply';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const toggleDropdown = (isOpen) => {
+        setIsDropdownOpen(isOpen);
+    };
+
     return (
         <Router>
             <div className="App">
-                <Header />
+                <Header isDropdownOpen={isDropdownOpen} toggleDropdown={toggleDropdown} />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/contact" element={<Contact />} />
@@ -62,7 +69,7 @@ function App() {
                     <Route path="/fuel-gas-supply" element={<FuelGasSupply />} />
                     <Route path="/ME-training" element={<MEtraining />} />
                 </Routes>
-                <Footer />
+                <Footer toggleDropdown={toggleDropdown} />
             </div>
         </Router>
     );

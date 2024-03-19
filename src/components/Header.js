@@ -5,33 +5,31 @@ import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-const Header = () => {
+const Header = ({ isDropdownOpen, toggleDropdown }) => {
     const [animated, setAnimated] = useState(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [showCurtainMenu, setShowCurtainMenu] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
     const [showMobileServices, setShowMobileServices] = useState(false);
-
     const location = useLocation();
 
     const handleToggleSublist = (e) => {
-        setIsDropdownOpen(!isDropdownOpen);
         setShowCurtainMenu(!showCurtainMenu);
         e.stopPropagation();
     };
 
     const handleToggleServices = () => {
-        setShowMobileServices(!showMobileServices);
-        setShowCurtainMenu(!showMobileServices);
+        if (isDropdownOpen) {
+            toggleDropdown(false);
+        } else {
+            toggleDropdown(true);
+            setShowMobileServices(true);
+            setShowCurtainMenu(true);
+        }
     };
     
     const handleExitMenu = () => {
-        setIsDropdownOpen(false);
+        toggleDropdown(false);
         setShowCurtainMenu(false); 
-    };
-
-    const handleMobileServicesClick = () => {
-        setIsDropdownOpen(!isDropdownOpen);
     };
     
     useEffect(() => {
@@ -61,7 +59,7 @@ const Header = () => {
             setShowMobileServices(false);
         }
     }, [showCurtainMenu]);
-    
+
 
     const isContactPage = location.pathname === '/contact';
     const isAboutPage = location.pathname === '/about';
@@ -200,10 +198,10 @@ return (
                             <Link className="nav-link" to="/about">About</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <Dropdown show={isDropdownOpen} onToggle={(isOpen) => setIsDropdownOpen(isOpen)}>
-                                <Dropdown.Toggle id="dropdown-basic" className={`nav-link custom-dropdown-toggle ${isDropdownOpen ? 'dropdown-open' : ''}`}>
-                                    Services
-                                </Dropdown.Toggle>
+                        <Dropdown show={isDropdownOpen} onToggle={(isOpen) => toggleDropdown(isOpen)}>
+                            <Dropdown.Toggle id="dropdown-basic" className={`nav-link custom-dropdown-toggle ${isDropdownOpen ? 'dropdown-open' : ''}`}>
+                                Services
+                            </Dropdown.Toggle>
                                 <Dropdown.Menu className="custom-dropdown-menu">
                                     <Dropdown.Item as={Link} to="/pre-docking">Pre-Docking inspection</Dropdown.Item>
                                     <Dropdown.Item as={Link} to="/docking-services" onClick={handleToggleSublist} style={{ whiteSpace: 'normal', fontSize: '0.9rem' }}>
@@ -295,7 +293,7 @@ return (
                 </ul>
             </div>
         )}
-    </div>
+      </div>
     );
 };
 
