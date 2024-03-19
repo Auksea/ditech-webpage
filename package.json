@@ -1,5 +1,6 @@
 {
   "name": "ditech-webpage",
+  "homepage": "https://di-tech.eu/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
