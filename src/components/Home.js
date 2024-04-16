@@ -52,6 +52,15 @@ const Home = () => {
                 </div>
             </div>
             <Carousel activeIndex={index} onSelect={() => {}} controls={false} indicators={false}>
+            <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={`${process.env.PUBLIC_URL}/pics/background.jpeg`}
+                        alt="First1 slide"
+                    />
+                    <Carousel.Caption>
+                    </Carousel.Caption>
+                </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
