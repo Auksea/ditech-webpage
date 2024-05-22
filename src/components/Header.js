@@ -37,10 +37,6 @@ const Header = ({ isDropdownOpen, toggleDropdown }) => {
     }, []);
 
     useEffect(() => {
-        handleExitMenu();
-    }, [location]);
-
-    useEffect(() => {
         const setResponsiveness = () => {
             return window.innerWidth < 768 ? setIsMobile(true) : setIsMobile(false);
         };
@@ -175,7 +171,7 @@ const companyLogo = "/pics/Di-Tech-logo.jpg";
 return (
     <div className={`header-wrapper ${animated ? 'animated' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}${headerImage})` }}>
         <Link className="navbar-brand" to="/">
-            <img src={`${process.env.PUBLIC_URL}${companyLogo}`} alt="Company Icon Header" className="company-icon-header" />
+            <img src={`${process.env.PUBLIC_URL}${companyLogo}`} alt="marine engineer" className="company-icon-header" />
         </Link>
         <div className={`heading-container ${isContactPage ? 'contact-page' : ''} ${isAboutPage ? 'about-page' : ''}`}>
             <h1 className="heading">{headerText}</h1>

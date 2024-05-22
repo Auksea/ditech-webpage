@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import './Home.css';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -15,8 +16,13 @@ const Home = () => {
 
     return (
         <div className="home-container">
+            <Helmet>
+                <title>Marine Engineering Services | What We Offer</title>
+                <meta name="description" content="Specialists in ME-C, ME-B, and all dual fuel engines. Maintenance, performance optimization, troubleshooting, and more." />
+                <link rel="canonical" href="https://di-tech.eu/" />
+            </Helmet>
             <h2 className="section-title">What We Offer</h2>
-            <p className="section-description">We are specialists in ME-C, ME-B and all dual fuel engines</p>
+            <p className="section-description">We are specialists in ME-C, ME-B, and all dual fuel engines</p>
             <div className="row">
                 <div className="col-lg-6">
                     <div className="card">
@@ -30,7 +36,7 @@ const Home = () => {
                     <div className="card">
                         <div className="card-body">
                             <h5 className="card-title">Performance optimization</h5>
-                            <p className="card-text">Correct performance adjustment of the engine is crucial for engine reliability, cylinder conditions and to maintain optimized fuel consumption.</p>
+                            <p className="card-text">Correct performance adjustment of the engine is crucial for engine reliability, cylinder conditions, and to maintain optimized fuel consumption.</p>
                         </div>
                     </div>
                 </div>
@@ -38,7 +44,7 @@ const Home = () => {
                     <div className="card">
                         <div className="card-body">
                             <h5 className="card-title">Trouble shooting</h5>
-                            <p className="card-text">We offer troubleshooting and support in case of malfunction of the engine operation. Trouble shooting tasks can include: Performance evaluation, Operating issues, Issues with auto tuning, DF operating failure, abnormal alarms, start issues.</p>
+                            <p className="card-text">We offer troubleshooting and support in case of malfunction of the engine operation. Troubleshooting tasks can include: Performance evaluation, Operating issues, Issues with auto tuning, DF operating failure, abnormal alarms, start issues.</p>
                         </div>
                     </div>
                 </div>
@@ -46,73 +52,70 @@ const Home = () => {
                     <div className="card">
                         <div className="card-body">
                             <h5 className="card-title">Modification of cylinder lubricators (ME/Alpha)</h5>
-                            <p className="card-text">Modification of cylinder lubricators to increase the frequency of cylinder oil injections. Higher cylinder oil injections frequencies results in fewer dry revolutions, which extend the time between engine overhauls.</p>
+                            <p className="card-text">Modification of cylinder lubricators to increase the frequency of cylinder oil injections. Higher cylinder oil injection frequencies result in fewer dry revolutions, which extend the time between engine overhauls.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <Carousel activeIndex={index} onSelect={() => {}} controls={false} indicators={false}>
-            <Carousel.Item>
+                <Carousel.Item>
                     <img
                         className="d-block w-100"
                         src={`${process.env.PUBLIC_URL}/pics/background.jpeg`}
-                        alt="First1 slide"
+                        alt="marine engineers"
                     />
                     <Carousel.Caption>
+                        <h3>Marine Engineers</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
                         src={`${process.env.PUBLIC_URL}/pics/work12.jpeg`}
-                        alt="First slide"
+                        alt="marine engineering services denmark"
                     />
                     <Carousel.Caption>
+                        <h3>Engineering Services</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
                         src={`${process.env.PUBLIC_URL}/pics/work5.jpeg`}
-                        alt="Second slide"
+                        alt="ship repair and maintenance services"
                     />
                     <Carousel.Caption>
+                        <h3>Repair and Maintenance</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
                         src={`${process.env.PUBLIC_URL}/pics/work14.jpeg`}
-                        alt="Third slide"
+                        alt="ship repair and maintenance services"
                     />
                     <Carousel.Caption>
+                        <h3>Maintenance Services</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
                         src={`${process.env.PUBLIC_URL}/pics/work10.jpeg`}
-                        alt="Fourth slide"
+                        alt="ship repair services"
                     />
                     <Carousel.Caption>
+                        <h3>Ship Repair</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
                         src={`${process.env.PUBLIC_URL}/pics/work20.jpg`}
-                        alt="Fifth slide"
+                        alt="ship maintenance company"
                     />
                     <Carousel.Caption>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work19.jpg`}
-                        alt="Sixth slide"
-                    />
-                    <Carousel.Caption>
+                        <h3>Maintenance Company</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

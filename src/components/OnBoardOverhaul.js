@@ -1,13 +1,19 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './OnBoardOverhaul.css';
 
 function OnBoardOverhaul() {
   return (
     <div className="on-board-overhaul">
-      <h1 className="headingofOverhaul">Overhaul of FIVA/ELFI/ELVA </h1>
+      <Helmet>
+        <title>Overhaul of FIVA/ELFI/ELVA</title>
+        <meta name="description" content="Explore our onboard overhaul services for FIVA, ELFI, and ELVA systems. Contact us today to elevate your fleet's performance and efficiency." />
+        <link rel="canonical" href="https://di-tech.eu/onboard-overhaul" />
+      </Helmet>
+      <h1 className="headingofOverhaul">Overhaul of FIVA/ELFI/ELVA</h1>
       <div className="contentofOverhaul">
         <div className="text-columnofOverhaul">
-        <p>
+          <p>
             Our onboard overhaul services encompass a range of activities to ensure the reliability and performance of your ship's critical components. We specialize in:
           </p>
           <ul>
@@ -21,11 +27,11 @@ function OnBoardOverhaul() {
             From overhauling propulsion systems to optimizing fuel delivery mechanisms, we offer tailored solutions to meet your vessel's specific requirements. Our goal is to deliver top-notch service that enhances your fleet's performance and extends the lifespan of your equipment.
           </p>
           <p className='extraParagraph'>
-        Contact us today to explore how our engineering services can elevate your fleet's performance and efficiency.
-      </p>
+            Contact us today to explore how our engineering services can elevate your fleet's performance and efficiency.
+          </p>
         </div>
         <div className="image-column">
-          <img src="/pics/example2.jpg" alt="Onboard Overhaul" />
+          <img src="/pics/example2.jpg" alt="overhaul ship engine" />
         </div>
       </div>
     </div>

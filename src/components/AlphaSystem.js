@@ -1,17 +1,23 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './AlphaSystem.css';
 
 const AlphaSystem = () => {
   return (
     <div className="alpha-system">
+      <Helmet>
+        <title>Alpha Lubricator Upgrade - Slow Steaming Kit - Di-Tech Marine Engineering</title>
+        <meta name="description" content="Explore the Alpha Lubricator Upgrade and Slow Steaming Kit offered by Di-Tech Marine Engineering. Learn about its benefits, scope of content, and how it optimizes cylinder oil consumption for marine engines." />
+        <link rel="canonical" href="https://di-tech.eu/alpha-system" />
+      </Helmet>
+
       <h1 className='heading-of-Lubricator-page'>Alpha Lubricator Upgrade</h1>
       <p className='second-heading-of-Lubricator-page'>Slow Steaming Kit</p>
       
-      {/* First set of rows */}
       <div className="row">
         <div className="row-item">
-          <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage1.PNG`} alt="Image 1" className="row-image" />
-          <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage2.PNG`} alt="Image 2" className="row-image" />
+          <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage1.PNG`} alt="ship engine repair companies" className="row-image" />
+          <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage2.PNG`} alt="ship engine repair companies" className="row-image" />
           <h2>Reduction of cylinder oil costs</h2>
           <p>
             In early 2012, a new layout of the Alpha Lubricator in new MC engines was intro-
@@ -46,7 +52,6 @@ const AlphaSystem = () => {
         </div>
       </div>
 
-      {/* Second set of rows */}
       <div className="row-wrapper">
         <h2 className='middle-heading'>Alpha Lubricator Upgrade is benefi cial to all large bore MC engines (70-98 bore) and older installations in small bore engines.</h2>
         <div className="row">
@@ -80,13 +85,12 @@ const AlphaSystem = () => {
         </div>
       </div>
 
-      {/* Container for the last two images and paragraph */}
       <div className="last-images-container">
-        <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage3.PNG`} alt="Image 3" className="row-image" />
+        <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage3.PNG`} alt="ship engine repair companies" className="row-image" />
         <p>
           The new lubricator layout reduces the engine power level at which the algorithm, controlling the cylinder oil feed rate, changes. The “breakpoint” is moved to the left. The Alpha Lubricator Upgrade enables the cylinder oil feed rate to follow a lower curve. The marked area in the fi gure above corresponds to the potential lubrication oil savings from upgrading the system. 
         </p>
-        <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage4.PNG`} alt="Image 4" className="row-image" />
+        <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage4.PNG`} alt="ship engine repair companies" className="row-image" />
       </div>
     </div>
   );

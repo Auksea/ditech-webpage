@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import './CylinderMeasurements.css';
 
 const CylinderMeasurements = () => {
@@ -14,11 +15,14 @@ const CylinderMeasurements = () => {
 
     return (
         <div style={{ textAlign: 'center' }}>
-            {/* Heading */}
+            <Helmet>
+                <title>Cylinder Liner Measurement - Di-Tech Marine Engineering</title>
+                <meta name="description" content="Learn about Di-Tech Marine Engineering's cylinder liner measurement services, including condition-based evaluation and 3D scanning of cylinder liners. Enhance vessel efficiency and minimize operational downtime." />
+                <link rel="canonical" href="https://di-tech.eu/cylinder-measurement" />
+            </Helmet>
             <p className='section-title-for-cylinderPage1'>What we Offer</p>
             <h1 className="section-title-for-cylinderPage2">Cylinder liner measurement including condition-based evaluation</h1>
             
-            {/* Columns */}
             <div className="row">
                 <div className="col-md-6">
                     <p className='cylinder-text'>Minimize Operational Downtime and Enhance Vessel Efficiency through Big Data Analysis</p>
@@ -34,24 +38,23 @@ const CylinderMeasurements = () => {
                 </div>
                 <div className="col-md-6">
                     <img
-                        className="imageForCylinderPage3"
+                        className="engine cylinder measuring tool"
                         src={`${process.env.PUBLIC_URL}/pics/cylinder.PNG`}
                         alt="Cylinder"
                     />
                 </div>
             </div>
 
-            {/* Bootstrap Carousel */}
             <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
                     <div className={`carousel-item ${activeIndex === 0 ? 'active' : ''}`}>
-                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements1.PNG`} alt="First slide" />
+                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements1.PNG`} alt="3D scanning of cylinder liners" />
                     </div>
                     <div className={`carousel-item ${activeIndex === 1 ? 'active' : ''}`}>
-                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements2.PNG`} alt="Second slide" />
+                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements2.PNG`} alt="3D scanning of cylinder liners" />
                     </div>
                     <div className={`carousel-item ${activeIndex === 2 ? 'active' : ''}`}>
-                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements4.PNG`} alt="Third slide" />
+                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements4.PNG`} alt="3D scanning of cylinder liners" />
                     </div>
                 </div>
             </div>

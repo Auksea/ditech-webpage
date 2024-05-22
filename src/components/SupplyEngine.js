@@ -1,9 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './SupplyEngine.css';
 
 function SupplyEngine() {
   return (
     <div className="supplyEngine">
+      <Helmet>
+        <title>Supply of Engine Driven Hydraulic Pumps and Proportional Valves</title>
+        <meta name="description" content="We supply top-quality engine driven hydraulic pumps and proportional valves manufactured by Danfoss (Eaton), ensuring superior performance and reliability in hydraulic systems." />
+        <link rel="canonical" href="https://di-tech.eu/supply-engine" />
+      </Helmet>
       <h1 className="headingofSupply">Supply of engine driven hydraulic pumps and proportional valves made by Danfoss(Eaton)</h1>
       <div className="contentOfSupplyEngine">
         <p>Our supply includes top-quality engine driven hydraulic pumps and proportional valves manufactured by Danfoss (Eaton), ensuring superior performance and reliability in hydraulic systems.</p>
@@ -16,4 +22,5 @@ function SupplyEngine() {
 }
 
 export default SupplyEngine;
+
 

@@ -1,9 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './PreDockingServices.css';
 
 function PreDockingServices() {
   return (
     <div className="column-container">
+      <Helmet>
+        <title>Pre-Docking Services</title>
+        <meta name="description" content="Discover our pre-docking services for MC/MC-C, ME/ME-C, and ME-B series engines, including visual inspections, measurements, and tasks to be carried out by vessel crew." />
+        <link rel="canonical" href="https://di-tech.eu/pre-docking-services" />
+      </Helmet>
       <div className="column">
         <div className="column-heading">
           <h2>MC/MC-C Series</h2>

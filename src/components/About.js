@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import './About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBusinessTime, faHandshake, faUsers, faMedal, faComments } from '@fortawesome/free-solid-svg-icons';
@@ -35,8 +36,11 @@ const AboutPage = () => {
 
   return (
     <div className="about-container">
-      <h2 className="first-heading">About Us</h2>
-      <p className="second-heading">Di-Tech was founded in 2021 and founding partners have years of experience with marine engines</p>
+      <Helmet>
+        <title>About Us - Di-Tech Marine Engineering</title>
+        <meta name="about the company" content="Learn about Di-Tech Marine Engineering, founded in 2021 with years of experience in marine engines. Our values, mission, and expertise in MAN B&W two-stroke marine engines." />
+        <link rel="canonical" href="https://di-tech.eu/about" />
+      </Helmet>
       
       <div className="values-block">
         <p className="block-heading-values">Our Values</p>
@@ -73,7 +77,7 @@ const AboutPage = () => {
           <img
             className="d-block w-100"
             src={`${process.env.PUBLIC_URL}/pics/work13.jpeg`}
-            alt="First slide"
+            alt="Ship Engine Repair Denmark"
           />
         </div>
         <div className="experience-text">

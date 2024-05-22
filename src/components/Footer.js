@@ -1,22 +1,25 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './Footer.css';
 
 const Footer = ({ toggleDropdown }) => {
     const scrollToTopAndOpenDropdown = () => {
-        // Scroll to the top
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
-        
-        // Open the Services dropdown menu
         toggleDropdown(true);
     };
 
     return (
         <footer className="footer">
+            <Helmet>
+                <title>Di-Tech Marine Engineering - Contact Information and Services</title>
+                <meta name="description" content="Get in touch with Di-Tech Marine Engineering for high-quality marine engineering services. Contact us for maintenance of engine control systems (ECS), performance optimization, troubleshooting, and modification of cylinder lubricators (ME/Alpha). Visit our website to learn more." />
+                <link rel="canonical" href="https://di-tech.eu/footer" />
+            </Helmet>
             <div className="FooterImgColumn">
-                <img src={`${process.env.PUBLIC_URL}/pics/Di-Tech-logo.jpg`} alt="Company Icon Footer" className="company-icon-footer" />
+                <img src={`${process.env.PUBLIC_URL}/pics/Di-Tech-logo.jpg`} alt="marine engineering services" className="company-icon-footer" />
             </div>
             <div className="FooterColumn">
                 <h4>Contact Information</h4>
@@ -29,10 +32,9 @@ const Footer = ({ toggleDropdown }) => {
             </div>
             <div className="FooterColumn">
                 <h4>Services</h4>
-                {/* Add onClick event to each service link */}
                 <p><a href="#" onClick={scrollToTopAndOpenDropdown}>Maintenance of Engine Control system (ECS)</a></p>
                 <p><a href="#" onClick={scrollToTopAndOpenDropdown}>Performance optimization</a></p>
-                <p><a href="#" onClick={scrollToTopAndOpenDropdown}>Trouble shooting</a></p>
+                <p><a href="#" onClick={scrollToTopAndOpenDropdown}>Troubleshooting</a></p>
                 <p><a href="#" onClick={scrollToTopAndOpenDropdown}>Modification of cylinder lubricators (ME/Alpha)</a></p>
             </div>
         </footer>
@@ -40,3 +42,4 @@ const Footer = ({ toggleDropdown }) => {
 };
 
 export default Footer;
+

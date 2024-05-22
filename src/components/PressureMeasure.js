@@ -1,9 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './PressureMeasure.css';
 
 function PressureMeasure() {
   return (
     <div className="pressure-measure">
+      <Helmet>
+        <title>Real-time Pressure Measuring Instrument</title>
+        <meta name="description" content="Our real-time pressure measuring instrument provides accurate and reliable data for monitoring pressure levels in various ship systems." />
+        <link rel="canonical" href="https://di-tech.eu/pressure-measure" />
+      </Helmet>
       <h1 className="headingofPressureMeasure">Real-time Pressure Measuring Instrument</h1>
       <div className="contentofPressure">
         <div className="text-columnofPressure">
@@ -14,11 +20,8 @@ function PressureMeasure() {
             Contact us today to explore how our engineering services can elevate your fleet's performance and efficiency.
           </p>
         </div>
-        {/*<div className="image-column">
-          <img src="your-image-url.jpg" alt="Pressure Measuring Instrument" />
-  </div>*/}
-</div>
-</div>
+      </div>
+    </div>
   );
 }
 

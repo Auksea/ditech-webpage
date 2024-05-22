@@ -1,9 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './EngineeringServices.css';
 
 function EngineeringServices() {
   return (
     <div className="engineering-services">
+      <Helmet>
+        <title>Engineering Services for Ship Retrofit - Di-Tech Marine Engineering</title>
+        <meta name="description" content="Discover Di-Tech's comprehensive engineering services tailored for ship retrofit projects. From upgrading propulsion systems to enhancing fuel efficiency, our team is equipped to handle diverse retrofit needs. Contact us to explore how our engineering services can elevate your fleet's performance and enhance environmental sustainability." />
+        <link rel="canonical" href="https://di-tech.eu/engineering-services" />
+      </Helmet>
       <h1 className="headingofEngineering">Engineering Services for Ship Retrofit</h1>
       <div className="contentofEng">
         <div className="text-columnofEng">
@@ -18,7 +24,7 @@ function EngineeringServices() {
           </p>
         </div>
         <div className="image-column">
-          <img src={`${process.env.PUBLIC_URL}/pics/work15.jpg`} alt="Ship Retrofit" />
+          <img src={`${process.env.PUBLIC_URL}/pics/work15.jpg`} alt="marine engineering services" />
         </div>
       </div>
     </div>
@@ -26,3 +32,4 @@ function EngineeringServices() {
 }
 
 export default EngineeringServices;
+
