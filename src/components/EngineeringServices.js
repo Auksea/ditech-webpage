@@ -24,7 +24,7 @@ function EngineeringServices() {
           </p>
         </div>
         <div className="image-column">
-          <img src={`${process.env.PUBLIC_URL}/pics/work15.jpg`} alt="marine engineering services" />
+          <img src={`${process.env.PUBLIC_URL}/pics/work15.webp`} alt="marine engineering services" />
         </div>
       </div>
     </div>

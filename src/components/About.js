@@ -76,7 +76,7 @@ const AboutPage = () => {
         <div className="experience-image">
           <img
             className="d-block w-100"
-            src={`${process.env.PUBLIC_URL}/pics/work13.jpeg`}
+            src={`${process.env.PUBLIC_URL}/pics/work13.webp`}
             alt="Ship Engine Repair Denmark"
           />
         </div>

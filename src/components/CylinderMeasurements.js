@@ -39,7 +39,7 @@ const CylinderMeasurements = () => {
                 <div className="col-md-6">
                     <img
                         className="engine cylinder measuring tool"
-                        src={`${process.env.PUBLIC_URL}/pics/cylinder.PNG`}
+                        src={`${process.env.PUBLIC_URL}/pics/cylinder.webp`}
                         alt="Cylinder"
                     />
                 </div>
@@ -48,13 +48,13 @@ const CylinderMeasurements = () => {
             <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
                     <div className={`carousel-item ${activeIndex === 0 ? 'active' : ''}`}>
-                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements1.PNG`} alt="3D scanning of cylinder liners" />
+                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements1.webp`} alt="3D scanning of cylinder liners" />
                     </div>
                     <div className={`carousel-item ${activeIndex === 1 ? 'active' : ''}`}>
-                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements2.PNG`} alt="3D scanning of cylinder liners" />
+                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements2.webp`} alt="3D scanning of cylinder liners" />
                     </div>
                     <div className={`carousel-item ${activeIndex === 2 ? 'active' : ''}`}>
-                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements4.PNG`} alt="3D scanning of cylinder liners" />
+                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements4.webp`} alt="3D scanning of cylinder liners" />
                     </div>
                 </div>
             </div>

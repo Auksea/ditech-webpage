@@ -31,7 +31,7 @@ function OnBoardOverhaul() {
           </p>
         </div>
         <div className="image-column">
-          <img src="/pics/example2.jpg" alt="overhaul ship engine" />
+          <img src="/pics/example2.webp" alt="overhaul ship engine" />
         </div>
       </div>
     </div>

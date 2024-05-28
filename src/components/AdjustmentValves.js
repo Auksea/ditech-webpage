@@ -22,7 +22,7 @@ function AdjustmentValves() {
           </p>
         </div>
         <div className="image-column">
-          <img src="/pics/parts.jpg" alt="ship engine repair companies" />
+          <img src="/pics/parts.wbep" alt="ship engine repair companies" />
         </div>
       </div>
     </div>

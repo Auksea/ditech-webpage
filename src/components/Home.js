@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet';
 import './Home.css';
-import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from 'react-bootstrap';
+
+const LazyLoadedCarousel = lazy(() => import('react-bootstrap/Carousel'));
 
 const Home = () => {
     const [index, setIndex] = useState(0);
@@ -19,7 +22,7 @@ const Home = () => {
             <Helmet>
                 <title>Marine Engineering Services | What We Offer</title>
                 <meta name="description" content="Specialists in ME-C, ME-B, and all dual fuel engines. Maintenance, performance optimization, troubleshooting, and more." />
-                <link rel="canonical" href="https://di-tech.eu/" />
+                <link rel="canonical" href="https://di-tech.eu" />
             </Helmet>
             <h2 className="section-title">What We Offer</h2>
             <p className="section-description">We are specialists in ME-C, ME-B, and all dual fuel engines</p>
@@ -57,72 +60,57 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Carousel activeIndex={index} onSelect={() => {}} controls={false} indicators={false}>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/background.jpeg`}
-                        alt="marine engineers"
-                    />
-                    <Carousel.Caption>
-                        <h3>Marine Engineers</h3>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work12.jpeg`}
-                        alt="marine engineering services denmark"
-                    />
-                    <Carousel.Caption>
-                        <h3>Engineering Services</h3>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work5.jpeg`}
-                        alt="ship repair and maintenance services"
-                    />
-                    <Carousel.Caption>
-                        <h3>Repair and Maintenance</h3>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work14.jpeg`}
-                        alt="ship repair and maintenance services"
-                    />
-                    <Carousel.Caption>
-                        <h3>Maintenance Services</h3>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work10.jpeg`}
-                        alt="ship repair services"
-                    />
-                    <Carousel.Caption>
-                        <h3>Ship Repair</h3>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src={`${process.env.PUBLIC_URL}/pics/work20.jpg`}
-                        alt="ship maintenance company"
-                    />
-                    <Carousel.Caption>
-                        <h3>Maintenance Company</h3>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+            <Suspense fallback={<div>Loading Carousel...</div>}>
+                <LazyLoadedCarousel activeIndex={index} onSelect={() => {}} controls={false} indicators={false}>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={`${process.env.PUBLIC_URL}/pics/background.webp`}
+                            alt="marine engineers"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={`${process.env.PUBLIC_URL}/pics/work12.webp`}
+                            alt="marine engineering services denmark"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={`${process.env.PUBLIC_URL}/pics/work5.webp`}
+                            alt="ship repair and maintenance services"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={`${process.env.PUBLIC_URL}/pics/work14.webp`}
+                            alt="ship repair and maintenance services"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={`${process.env.PUBLIC_URL}/pics/work10.webp`}
+                            alt="ship repair services"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={`${process.env.PUBLIC_URL}/pics/work20.webp`}
+                            alt="ship maintenance company"
+                        />
+                    </Carousel.Item>
+                </LazyLoadedCarousel>
+            </Suspense>
         </div>
     );
 };
 
 export default Home;
+
 
 

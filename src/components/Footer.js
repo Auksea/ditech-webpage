@@ -19,7 +19,7 @@ const Footer = ({ toggleDropdown }) => {
                 <link rel="canonical" href="https://di-tech.eu/footer" />
             </Helmet>
             <div className="FooterImgColumn">
-                <img src={`${process.env.PUBLIC_URL}/pics/Di-Tech-logo.jpg`} alt="marine engineering services" className="company-icon-footer" />
+                <img src={`${process.env.PUBLIC_URL}/pics/Di-Tech-logo.webp`} alt="marine engineering services" className="company-icon-footer" />
             </div>
             <div className="FooterColumn">
                 <h4>Contact Information</h4>

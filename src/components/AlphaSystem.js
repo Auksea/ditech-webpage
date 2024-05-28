@@ -16,8 +16,8 @@ const AlphaSystem = () => {
       
       <div className="row">
         <div className="row-item">
-          <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage1.PNG`} alt="ship engine repair companies" className="row-image" />
-          <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage2.PNG`} alt="ship engine repair companies" className="row-image" />
+          <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage1.webp`} alt="ship engine repair companies" className="row-image" />
+          <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage2.webp`} alt="ship engine repair companies" className="row-image" />
           <h2>Reduction of cylinder oil costs</h2>
           <p>
             In early 2012, a new layout of the Alpha Lubricator in new MC engines was intro-
@@ -86,11 +86,11 @@ const AlphaSystem = () => {
       </div>
 
       <div className="last-images-container">
-        <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage3.PNG`} alt="ship engine repair companies" className="row-image" />
+        <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage3.webp`} alt="ship engine repair companies" className="row-image" />
         <p>
           The new lubricator layout reduces the engine power level at which the algorithm, controlling the cylinder oil feed rate, changes. The “breakpoint” is moved to the left. The Alpha Lubricator Upgrade enables the cylinder oil feed rate to follow a lower curve. The marked area in the fi gure above corresponds to the potential lubrication oil savings from upgrading the system. 
         </p>
-        <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage4.PNG`} alt="ship engine repair companies" className="row-image" />
+        <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage4.webp`} alt="ship engine repair companies" className="row-image" />
       </div>
     </div>
   );

@@ -31,7 +31,6 @@ const urls = [
   { url: '/trouble-shooting', changefreq: 'monthly', priority: 0.8 },
   { url: '/fuel-gas-supply', changefreq: 'monthly', priority: 0.8 },
   { url: '/ME-training', changefreq: 'monthly', priority: 0.8 },
-  // Add more URLs here if needed
 ];
 
 const stream = new SitemapStream({ hostname });

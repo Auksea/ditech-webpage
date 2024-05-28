@@ -36,7 +36,7 @@ function PreDockingServices() {
           <li>VAK measuring of cylinder liners and combustion chambers</li>
           <li>Video inspection of cylinder liners and combustion chambers as required</li>
         </ul>
-        <hr style={{ width: '50%', margin: 'auto', padding: '20px' }} /> {/* Horizontal line */}
+        <hr style={{ width: '50%', margin: 'auto', padding: '20px' }} />
         <p className='heading-list'><strong>To be carried out by vessel crew</strong></p>
         <p className='heading-list-secondary'>Tasks to be completed before inspection:</p>
         <ul>
@@ -76,7 +76,7 @@ function PreDockingServices() {
           <li>VAK measuring of cylinder liners and combustion chambers</li>
           <li>Video inspection of cylinder liners and combustion chambers as required</li>
         </ul>
-        <hr style={{ width: '50%', margin: 'auto', padding: '20px' }} /> {/* Horizontal line */}
+        <hr style={{ width: '50%', margin: 'auto', padding: '20px' }} />
         <p className='heading-list'><strong>To be carried out by vessel crew</strong></p>
         <p className='heading-list-secondary'>Tasks to be completed before inspection:</p>
         <ul>
@@ -116,7 +116,7 @@ function PreDockingServices() {
           <li>VAK measuring of cylinder liners and combustion chambers</li>
           <li>Video inspection of cylinder liners and combustion chambers as required</li>
         </ul>
-        <hr style={{ width: '50%', margin: 'auto', padding: '20px' }} /> {/* Horizontal line */}
+        <hr style={{ width: '50%', margin: 'auto', padding: '20px' }} />
         <p className='heading-list'><strong>To be carried out by vessel crew</strong></p>
         <p className='heading-list-secondary'>Tasks to be completed before inspection:</p>
         <ul>
