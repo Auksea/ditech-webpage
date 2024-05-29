@@ -6,10 +6,17 @@ function OnBoardOverhaul() {
   return (
     <div className="on-board-overhaul">
       <Helmet>
-        <title>Overhaul of FIVA/ELFI/ELVA</title>
+        <title>Onboard Overhaul Services - Di-Tech Marine Engineering</title>
         <meta name="description" content="Explore our onboard overhaul services for FIVA, ELFI, and ELVA systems. Contact us today to elevate your fleet's performance and efficiency." />
+        <meta name="keywords" content="onboard overhaul services, FIVA overhaul, ELFI overhaul, ELVA overhaul, ship maintenance, marine engineering services" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Onboard Overhaul Services - Di-Tech Marine Engineering" />
+        <meta property="og:description" content="Explore our onboard overhaul services for FIVA, ELFI, and ELVA systems. Contact us today to elevate your fleet's performance and efficiency." />
+        <meta property="og:url" content="https://di-tech.eu/onboard-overhaul" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://di-tech.eu/onboard-overhaul" />
       </Helmet>
+
       <h1 className="headingofOverhaul">Overhaul of FIVA/ELFI/ELVA</h1>
       <div className="contentofOverhaul">
         <div className="text-columnofOverhaul">

@@ -38,10 +38,18 @@ const AboutPage = () => {
     <div className="about-container">
       <Helmet>
         <title>About Us - Di-Tech Marine Engineering</title>
-        <meta name="about the company" content="Learn about Di-Tech Marine Engineering, founded in 2021 with years of experience in marine engines. Our values, mission, and expertise in MAN B&W two-stroke marine engines." />
+        <meta name="description" content="Learn about Di-Tech Marine Engineering, your expert partner in MAN B&W two-stroke marine engine services. Discover our values, mission, and extensive experience in the marine industry." />
+        <meta name="keywords" content="Di-Tech Marine Engineering, MAN B&W engines, two-stroke marine engines, marine engine maintenance, marine engine troubleshooting, marine engine services, marine engineering company" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="About Us - Di-Tech Marine Engineering" />
+        <meta property="og:description" content="Discover Di-Tech Marine Engineering's expertise in MAN B&W two-stroke marine engines. Learn about our mission, values, and extensive industry experience." />
+        <meta property="og:url" content="https://di-tech.eu/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={'${process.env.PUBLIC_URL}/pics/work13.webp'} />
+        <meta property="og:image:alt" content="Di-Tech Marine Engineering Logo" />
         <link rel="canonical" href="https://di-tech.eu/about" />
       </Helmet>
-      
+
       <div className="values-block">
         <p className="block-heading-values">Our Values</p>
         <div className="value">

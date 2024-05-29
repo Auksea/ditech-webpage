@@ -20,10 +20,17 @@ const Home = () => {
     return (
         <div className="home-container">
             <Helmet>
-                <title>Marine Engineering Services | What We Offer</title>
-                <meta name="description" content="Specialists in ME-C, ME-B, and all dual fuel engines. Maintenance, performance optimization, troubleshooting, and more." />
-                <link rel="canonical" href="https://di-tech.eu" />
+            <title>Marine Engineering Services | What We Offer - Di-Tech Marine Engineering</title>
+            <meta name="description" content="Specialists in ME-C, ME-B, and all dual fuel engines. Maintenance, performance optimization, troubleshooting, and more." />
+            <meta name="keywords" content="marine engineering, marine engine services, ME-C, ME-B, dual fuel engines, maintenance, performance optimization, troubleshooting" />
+            <meta name="robots" content="index, follow" />
+            <meta property="og:title" content="Marine Engineering Services | What We Offer - Di-Tech Marine Engineering" />
+            <meta property="og:description" content="Specialists in ME-C, ME-B, and all dual fuel engines. Maintenance, performance optimization, troubleshooting, and more." />
+            <meta property="og:url" content="https://di-tech.eu" />
+            <meta property="og:type" content="website" />
+            <link rel="canonical" href="https://di-tech.eu" />
             </Helmet>
+
             <h2 className="section-title">What We Offer</h2>
             <p className="section-description">We are specialists in ME-C, ME-B, and all dual fuel engines</p>
             <div className="row">
@@ -72,7 +79,7 @@ const Home = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={`${process.env.PUBLIC_URL}/pics/work12.webp`}
+                            src={'${process.env.PUBLIC_URL}/pics/work12.webp'}
                             alt="marine engineering services denmark"
                         />
                     </Carousel.Item>

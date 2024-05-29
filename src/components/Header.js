@@ -4,6 +4,7 @@ import { Dropdown } from 'react-bootstrap';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { Helmet } from 'react-helmet';
 
 const Header = ({ isDropdownOpen, toggleDropdown }) => {
     const [animated, setAnimated] = useState(false);
@@ -174,6 +175,11 @@ const Header = ({ isDropdownOpen, toggleDropdown }) => {
     
     return (
         <div className={`header-wrapper ${animated ? 'animated' : ''}`} style={{ backgroundImage: headerImageLoaded ? `url(${process.env.PUBLIC_URL}${headerImage})` : 'none' }}>
+            <Helmet>
+                <title>{headerText}</title>
+                <meta name="description" content={`Discover ${headerText} services and solutions provided by our expert marine engineering team.`} />
+                <link rel="canonical" href={`https://di-tech.eu/${location.pathname}`} />
+            </Helmet>
             <Link className="navbar-brand" to="/">
                 <img src={`${process.env.PUBLIC_URL}${companyLogo}`} alt="marine engineer" className="company-icon-header" loading="lazy" />
             </Link>

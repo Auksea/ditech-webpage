@@ -8,8 +8,15 @@ function DockingServices() {
       <Helmet>
         <title>Our Services - Di-Tech Marine Engineering</title>
         <meta name="description" content="Discover the professional services offered by Di-Tech Marine Engineering, specializing in maritime engineering. Our expertise includes piston and cylinder liner overhaul, fuel pumps/boosters, exhaust valves, lubricators, and more. Contact us today to learn how we can assist you with your maritime engineering needs." />
-        <link rel="canonical" href="https://di-tech.eu//docking-services" />
+        <meta name="keywords" content="maritime engineering, Di-Tech Marine Engineering, piston overhaul, cylinder liner overhaul, fuel pumps, exhaust valves, lubricators, ELFI calibration, FIVA calibration, pneumatic system overhaul, valve maintenance, hydraulic system overhaul" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Our Services - Di-Tech Marine Engineering" />
+        <meta property="og:description" content="Discover the professional services offered by Di-Tech Marine Engineering, specializing in maritime engineering. Our expertise includes piston and cylinder liner overhaul, fuel pumps/boosters, exhaust valves, lubricators, and more. Contact us today to learn how we can assist you with your maritime engineering needs." />
+        <meta property="og:url" content="https://di-tech.eu/docking-services" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://di-tech.eu/docking-services" />
       </Helmet>
+
       <h1 className="headingofDocking">Our Services</h1>
       <p className="secondaryHeadingofDocking">We provide professional services in maritime engineering, specializing in:</p>
       <div className="services-grid">

@@ -6,10 +6,17 @@ function PreDockingServices() {
   return (
     <div className="column-container">
       <Helmet>
-        <title>Pre-Docking Services</title>
+        <title>Pre-Docking Services - Di-Tech Marine Engineering</title>
         <meta name="description" content="Discover our pre-docking services for MC/MC-C, ME/ME-C, and ME-B series engines, including visual inspections, measurements, and tasks to be carried out by vessel crew." />
+        <meta name="keywords" content="pre-docking services, MC/MC-C series, ME/ME-C series, ME-B series, engine inspection, visual inspection, measurement, vessel crew tasks" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Pre-Docking Services - Di-Tech Marine Engineering" />
+        <meta property="og:description" content="Discover our pre-docking services for MC/MC-C, ME/ME-C, and ME-B series engines, including visual inspections, measurements, and tasks to be carried out by vessel crew." />
+        <meta property="og:url" content="https://di-tech.eu/pre-docking-services" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://di-tech.eu/pre-docking-services" />
       </Helmet>
+
       <div className="column">
         <div className="column-heading">
           <h2>MC/MC-C Series</h2>

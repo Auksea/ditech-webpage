@@ -6,10 +6,17 @@ function PerformanceMeasurement() {
   return (
     <div className="performance-measurement">
       <Helmet>
-        <title>Performance measurement and evaluation</title>
+        <title>Performance Measurement & Evaluation - Di-Tech Marine Engineering</title>
         <meta name="description" content="Discover how Di-Tech utilizes advanced tools and methodologies to assess and analyze performance metrics for optimizing fleet operations. Contact us today to elevate your fleet's performance and efficiency." />
+        <meta name="keywords" content="performance measurement, fleet operations optimization, fuel consumption analysis, emissions levels, operational efficiency, maintenance effectiveness" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Performance Measurement & Evaluation - Di-Tech Marine Engineering" />
+        <meta property="og:description" content="Discover how Di-Tech utilizes advanced tools and methodologies to assess and analyze performance metrics for optimizing fleet operations. Contact us today to elevate your fleet's performance and efficiency." />
+        <meta property="og:url" content="https://di-tech.eu/performance-measurement" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://di-tech.eu/performance-measurement" />
       </Helmet>
+
       <h1 className="headingofPerformance">Performance measurement and evaluation</h1>
       <div className="contentofPerformance">
         <div className="text-columnofPerformance">

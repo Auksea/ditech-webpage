@@ -7,7 +7,14 @@ function AdjustmentValves() {
     <div className="adjustment-valves">
       <Helmet>
         <title>Fuel Injection Valves Overhaul - Di-Tech Marine Engineering</title>
-        <meta name="description of service" content="Learn about our overhaul, testing, and adjustment services for fuel injection valves, designed to optimize the performance and efficiency of marine engines." />
+        <meta name="description" content="Discover Di-Tech Marine Engineering's expert services for overhauling, testing, and adjusting fuel injection valves. Optimize your marine engine's performance and efficiency with our specialized solutions." />
+        <meta name="keywords" content="Di-Tech Marine Engineering, fuel injection valves, valve overhaul, valve testing, valve adjustment, marine engine services, marine engineering, engine efficiency" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Fuel Injection Valves Overhaul - Di-Tech Marine Engineering" />
+        <meta property="og:description" content="Expert services in overhauling, testing, and adjusting fuel injection valves to enhance marine engine performance and efficiency. Learn more about Di-Tech Marine Engineering." />
+        <meta property="og:url" content="https://di-tech.eu/adjustment-valves" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={'${process.env.PUBLIC_URL}/pics/parts.webp'} />
         <link rel="canonical" href="https://di-tech.eu/adjustment-valves" />
       </Helmet>
 
@@ -22,7 +29,7 @@ function AdjustmentValves() {
           </p>
         </div>
         <div className="image-column">
-          <img src="/pics/parts.wbep" alt="ship engine repair companies" />
+          <img src="/pics/parts.webp" alt="ship engine repair companies" />
         </div>
       </div>
     </div>

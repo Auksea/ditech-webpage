@@ -6,9 +6,17 @@ const AlphaSystem = () => {
   return (
     <div className="alpha-system">
       <Helmet>
-        <title>Alpha Lubricator Upgrade - Slow Steaming Kit - Di-Tech Marine Engineering</title>
-        <meta name="description" content="Explore the Alpha Lubricator Upgrade and Slow Steaming Kit offered by Di-Tech Marine Engineering. Learn about its benefits, scope of content, and how it optimizes cylinder oil consumption for marine engines." />
-        <link rel="canonical" href="https://di-tech.eu/alpha-system" />
+          <title>Alpha Lubricator Upgrade - Slow Steaming Kit - Di-Tech Marine Engineering</title>
+          <meta name="description" content="Explore the Alpha Lubricator Upgrade and Slow Steaming Kit offered by Di-Tech Marine Engineering. Learn about its benefits, scope of content, and how it optimizes cylinder oil consumption for marine engines." />
+          <meta name="keywords" content="Alpha Lubricator Upgrade, Slow Steaming Kit, Di-Tech Marine Engineering, cylinder oil consumption, marine engines, lubrication optimization, engine performance, fuel efficiency" />
+          <meta name="robots" content="index, follow" />
+          <meta property="og:title" content="Alpha Lubricator Upgrade - Slow Steaming Kit - Di-Tech Marine Engineering" />
+          <meta property="og:description" content="Discover the Alpha Lubricator Upgrade and Slow Steaming Kit. Learn how Di-Tech Marine Engineering optimizes cylinder oil consumption and enhances marine engine performance." />
+          <meta property="og:url" content="https://di-tech.eu/alpha-system" />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content={'${process.env.PUBLIC_URL}/pics/AlphaLubImage1.webp'} />
+          <meta property="og:image:alt" content="Alpha Lubricator Upgrade" />
+          <link rel="canonical" href="https://di-tech.eu/alpha-system" />
       </Helmet>
 
       <h1 className='heading-of-Lubricator-page'>Alpha Lubricator Upgrade</h1>

@@ -32,12 +32,19 @@ const Contact = () => {
     };
 
 return (
-<div className="contact-page-container">
+    <div className="contact-page-container">
     <Helmet>
         <title>Contact Us - Di-Tech Marine Engineering</title>
         <meta name="description" content="Contact Di-Tech Marine Engineering for inquiries, workshop location, and contact information. Visit us in Frederikssund, Denmark, or reach us via phone or email." />
+        <meta name="keywords" content="Di-Tech Marine Engineering, contact, workshop, Frederikssund, Denmark, marine engineering services, phone, email, location" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Contact Us - Di-Tech Marine Engineering" />
+        <meta property="og:description" content="Reach out to Di-Tech Marine Engineering for all your marine engineering service inquiries. Visit our workshop in Frederikssund or contact us via phone or email." />
+        <meta property="og:url" content="https://di-tech.eu/contact" />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="https://di-tech.eu/contact" />
     </Helmet>
+
     <div className="columns-container">
         <div className="contact-info-column">
             <p className='column-heading'>Our workshop in Frederikssund, Denmark</p>
