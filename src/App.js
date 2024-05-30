@@ -1,5 +1,5 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -17,7 +17,7 @@ import HealthCheck from './components/HealthCheck';
 import LargeRepair from './components/LargeRepair';
 import AdjustmentValves from './components/AdjustmentValves';
 import ReconditionValves from './components/ReconditionValves';
-import OverhaulExhaustt from './components/OverhaulExhaust';
+import OverhaulExhaust from './components/OverhaulExhaust';
 import OverhaulFuel from './components/OverhaulFuel';
 import GeneralMaintenance from './components/GeneralMaintenance';
 import PumpOverhaul from './components/PumpOvehaul';
@@ -28,7 +28,6 @@ import DeRating from './components/DeRating';
 import TroubleShooting from './components/TroubleShooting';
 import MEtraining from './components/MEtraining';
 import FuelGasSupply from './components/FuelGasSupply';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -57,8 +56,8 @@ function App() {
                     <Route path="/large-repair" element={<LargeRepair />} />
                     <Route path="/adjustment-valves" element={<AdjustmentValves />} />
                     <Route path="/recondition-valves" element={<ReconditionValves />} />
-                    <Route path="/overhoal-exhaust" element={<OverhaulExhaustt />} />
-                    <Route path="/overhoal-fuel-boosters" element={<OverhaulFuel />} />
+                    <Route path="/overhaul-exhaust" element={<OverhaulExhaust />} />
+                    <Route path="/overhaul-fuel-boosters" element={<OverhaulFuel />} />
                     <Route path="/general-maintenance" element={<GeneralMaintenance />} />
                     <Route path="/pump-overhaul" element={<PumpOverhaul />} />
                     <Route path="/supply-engine" element={<SupplyEngine />} />

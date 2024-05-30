@@ -14,7 +14,6 @@ function HealthCheck() {
         <meta property="og:description" content="Di-Tech offers a comprehensive health check of engines involving thorough inspections and diagnostic tests to assess the condition and performance of your vessel's engines." />
         <meta property="og:url" content="https://di-tech.eu/health-check" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/health-check" />
       </Helmet>
 
       <h1 className="headingofHealthCkeck">Health check of engines </h1>

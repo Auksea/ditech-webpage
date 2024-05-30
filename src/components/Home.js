@@ -20,15 +20,14 @@ const Home = () => {
     return (
         <div className="home-container">
             <Helmet>
-            <title>Marine Engineering Services | What We Offer - Di-Tech Marine Engineering</title>
-            <meta name="description" content="Specialists in ME-C, ME-B, and all dual fuel engines. Maintenance, performance optimization, troubleshooting, and more." />
-            <meta name="keywords" content="marine engineering, marine engine services, ME-C, ME-B, dual fuel engines, maintenance, performance optimization, troubleshooting" />
-            <meta name="robots" content="index, follow" />
-            <meta property="og:title" content="Marine Engineering Services | What We Offer - Di-Tech Marine Engineering" />
-            <meta property="og:description" content="Specialists in ME-C, ME-B, and all dual fuel engines. Maintenance, performance optimization, troubleshooting, and more." />
-            <meta property="og:url" content="https://di-tech.eu" />
-            <meta property="og:type" content="website" />
-            <link rel="canonical" href="https://di-tech.eu" />
+                <title>Marine Engineering Services | What We Offer - Di-Tech Marine Engineering</title>
+                <meta name="description" content="Two Stroke Engine Maintenance. Specialists in ME-C, ME-B, and all dual fuel engines. Maintenance, performance optimization, troubleshooting, and more." />
+                <meta name="keywords" content="marine engineering, marine engine services, ME-C, ME-B, two stroke engines, maintenance, performance optimization, troubleshooting" />
+                <meta name="robots" content="index, follow" />
+                <meta property="og:title" content="Marine Engineering Services | What We Offer - Di-Tech Marine Engineering" />
+                <meta property="og:description" content="Specialists in ME-C, ME-B, and all dual fuel engines. Maintenance, performance optimization, troubleshooting, and more." />
+                <meta property="og:url" content="https://di-tech.eu/" />
+                <meta property="og:type" content="website" />
             </Helmet>
 
             <h2 className="section-title">What We Offer</h2>
@@ -53,7 +52,7 @@ const Home = () => {
                 <div className="col-lg-6">
                     <div className="card">
                         <div className="card-body">
-                            <h5 className="card-title">Trouble shooting</h5>
+                            <h5 className="card-title">Troubleshooting</h5>
                             <p className="card-text">We offer troubleshooting and support in case of malfunction of the engine operation. Troubleshooting tasks can include: Performance evaluation, Operating issues, Issues with auto tuning, DF operating failure, abnormal alarms, start issues.</p>
                         </div>
                     </div>

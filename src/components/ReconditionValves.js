@@ -14,7 +14,6 @@ function ReconditionValves() {
         <meta property="og:description" content="Reconditioning of exhaust valve spindles and seats for optimal engine performance." />
         <meta property="og:url" content="https://di-tech.eu/recondition-valves" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/recondition-valves" />
       </Helmet>
 
       <h1 className="headingofRecondition">Reconditioning of exhaust valve spindles and seats</h1>

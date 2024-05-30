@@ -14,7 +14,6 @@ function ShaPoLi() {
         <meta property="og:description" content="ShaPoLi (Shaft Power Limitation) is a system for managing power output in marine engines." />
         <meta property="og:url" content="https://di-tech.eu/ShaPoLi" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/ShaPoLi" />
       </Helmet>
 
       <h1 className="headingofShaPoli">ShaPoLi (Shaft Power Limitation)</h1>

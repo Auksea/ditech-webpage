@@ -15,7 +15,6 @@ function AdjustmentValves() {
         <meta property="og:url" content="https://di-tech.eu/adjustment-valves" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={'${process.env.PUBLIC_URL}/pics/parts.webp'} />
-        <link rel="canonical" href="https://di-tech.eu/adjustment-valves" />
       </Helmet>
 
       <h1 className="headingofAdjustmentV">Overhaul, Testing, and Adjustment of Fuel Injection Valves</h1>

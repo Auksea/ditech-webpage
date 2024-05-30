@@ -14,7 +14,6 @@ function TroubleShooting() {
         <meta property="og:description" content="Specializing in troubleshooting various ship systems including pneumatic control, hydraulic control, electrical control, main engine control, fuel gas supply, and dual fuel engine systems." />
         <meta property="og:url" content="https://di-tech.eu/trouble-shooting" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/trouble-shooting" />
       </Helmet>
 
       <h1 className="headingofTroubleShooting">Trouble shooting</h1>

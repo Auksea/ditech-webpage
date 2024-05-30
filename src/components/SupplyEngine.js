@@ -14,7 +14,6 @@ function SupplyEngine() {
         <meta property="og:description" content="We supply top-quality engine driven hydraulic pumps and proportional valves manufactured by Danfoss (Eaton), ensuring superior performance and reliability in hydraulic systems." />
         <meta property="og:url" content="https://di-tech.eu/supply-engine" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/supply-engine" />
       </Helmet>
 
       <h1 className="headingofSupply">Supply of engine driven hydraulic pumps and proportional valves made by Danfoss(Eaton)</h1>

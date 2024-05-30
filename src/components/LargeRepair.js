@@ -14,7 +14,6 @@ function LargeRepair() {
       <meta property="og:description" content="Di-Tech specializes in large repair services for marine engines, offering comprehensive solutions to address significant issues and ensure the optimal functioning of your vessel's engine systems." />
       <meta property="og:url" content="https://di-tech.eu/large-repair" />
       <meta property="og:type" content="website" />
-      <link rel="canonical" href="https://di-tech.eu/large-repair" />
     </Helmet>
 
       <h1 className="headingofLargeRepair">Large Repair</h1>

@@ -14,7 +14,6 @@ function OnBoardOverhaul() {
         <meta property="og:description" content="Explore our onboard overhaul services for FIVA, ELFI, and ELVA systems. Contact us today to elevate your fleet's performance and efficiency." />
         <meta property="og:url" content="https://di-tech.eu/onboard-overhaul" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/onboard-overhaul" />
       </Helmet>
 
       <h1 className="headingofOverhaul">Overhaul of FIVA/ELFI/ELVA</h1>

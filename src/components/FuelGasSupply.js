@@ -14,7 +14,6 @@ function FuelGasSupply() {
         <meta property="og:description" content="Di-Tech specializes in troubleshooting and repair of MAN PVU (Pressure Vacuum Units) within the fuel gas supply system. Our expertise ensures efficient diagnosis and resolution of issues, maintaining the reliability and performance of your gas supply system." />
         <meta property="og:url" content="https://di-tech.eu/fuel-gas-supply" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/fuel-gas-supply" />
       </Helmet>
       
       <h1 className="headingofFuelGasSupply">Fuel gas supply system</h1>

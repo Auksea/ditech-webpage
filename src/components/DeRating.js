@@ -14,7 +14,6 @@ function DeRating() {
         <meta property="og:description" content="Discover Di-Tech Marine Engineering's de-rating services. Enhance your fleet's performance and efficiency with our expert engineering solutions." />
         <meta property="og:url" content="https://di-tech.eu/de-rating" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/de-rating" />
       </Helmet>
       <h1 className="headingofDeRating">De-rating</h1>
       <div className="contentOfDeRating">

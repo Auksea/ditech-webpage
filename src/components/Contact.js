@@ -42,7 +42,6 @@ return (
         <meta property="og:description" content="Reach out to Di-Tech Marine Engineering for all your marine engineering service inquiries. Visit our workshop in Frederikssund or contact us via phone or email." />
         <meta property="og:url" content="https://di-tech.eu/contact" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/contact" />
     </Helmet>
 
     <div className="columns-container">

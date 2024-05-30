@@ -14,7 +14,6 @@ function DockingServices() {
         <meta property="og:description" content="Discover the professional services offered by Di-Tech Marine Engineering, specializing in maritime engineering. Our expertise includes piston and cylinder liner overhaul, fuel pumps/boosters, exhaust valves, lubricators, and more. Contact us today to learn how we can assist you with your maritime engineering needs." />
         <meta property="og:url" content="https://di-tech.eu/docking-services" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/docking-services" />
       </Helmet>
 
       <h1 className="headingofDocking">Our Services</h1>

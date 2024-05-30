@@ -178,7 +178,6 @@ const Header = ({ isDropdownOpen, toggleDropdown }) => {
             <Helmet>
                 <title>{headerText}</title>
                 <meta name="description" content={`Discover ${headerText} services and solutions provided by our expert marine engineering team.`} />
-                <link rel="canonical" href={`https://di-tech.eu/${location.pathname}`} />
             </Helmet>
             <Link className="navbar-brand" to="/">
                 <img src={`${process.env.PUBLIC_URL}${companyLogo}`} alt="marine engineer" className="company-icon-header" loading="lazy" />

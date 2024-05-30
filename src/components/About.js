@@ -47,7 +47,6 @@ const AboutPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:image" content={'${process.env.PUBLIC_URL}/pics/work13.webp'} />
         <meta property="og:image:alt" content="Di-Tech Marine Engineering Logo" />
-        <link rel="canonical" href="https://di-tech.eu/about" />
       </Helmet>
 
       <div className="values-block">

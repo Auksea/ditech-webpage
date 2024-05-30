@@ -14,7 +14,6 @@ function MEtraining() {
         <meta property="og:description" content="Discover our comprehensive onboard ME training programs, covering dual fuel engines. Tailored courses for all levels of experience to optimize fleet performance and efficiency." />
         <meta property="og:url" content="https://di-tech.eu/ME-training" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/ME-training" />
       </Helmet>
 
       <h1 className="headingofMEtraining">Onboard ME Training, also covering dual fuel engines.</h1>

@@ -14,7 +14,6 @@ function PressureMeasure() {
         <meta property="og:description" content="Our real-time pressure measuring instrument provides accurate and reliable data for monitoring pressure levels in various ship systems." />
         <meta property="og:url" content="https://di-tech.eu/pressure-measure" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/pressure-measure" />
       </Helmet>
 
       <h1 className="headingofPressureMeasure">Real-time Pressure Measuring Instrument</h1>

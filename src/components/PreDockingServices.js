@@ -14,7 +14,6 @@ function PreDockingServices() {
         <meta property="og:description" content="Discover our pre-docking services for MC/MC-C, ME/ME-C, and ME-B series engines, including visual inspections, measurements, and tasks to be carried out by vessel crew." />
         <meta property="og:url" content="https://di-tech.eu/pre-docking-services" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/pre-docking-services" />
       </Helmet>
 
       <div className="column">

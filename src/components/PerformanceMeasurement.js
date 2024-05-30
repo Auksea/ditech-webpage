@@ -14,7 +14,6 @@ function PerformanceMeasurement() {
         <meta property="og:description" content="Discover how Di-Tech utilizes advanced tools and methodologies to assess and analyze performance metrics for optimizing fleet operations. Contact us today to elevate your fleet's performance and efficiency." />
         <meta property="og:url" content="https://di-tech.eu/performance-measurement" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/performance-measurement" />
       </Helmet>
 
       <h1 className="headingofPerformance">Performance measurement and evaluation</h1>

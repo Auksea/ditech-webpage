@@ -14,7 +14,6 @@ function OverhaulExhaustt() {
         <meta property="og:description" content="Explore our comprehensive overhaul services for exhaust valves onboard and in workshop. Contact us today to elevate your fleet's performance and efficiency." />
         <meta property="og:url" content="https://di-tech.eu/overhoal-exhaust" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/overhoal-exhaust" />
       </Helmet>
 
       <h1 className="headingofOverhaulExh">Overhaul of Exhaust valves onboard and in workshop</h1>

@@ -16,7 +16,6 @@ function EngineeringServices() {
         <meta property="og:type" content="website" />
         <meta property="og:image" content={'${process.env.PUBLIC_URL}/pics/work15.webp'} />
         <meta property="og:image:alt" content="Marine Engineering Services" />
-        <link rel="canonical" href="https://di-tech.eu/engineering-services" />
       </Helmet>
       
       <h1 className="headingofEngineering">Engineering Services for Ship Retrofit</h1>

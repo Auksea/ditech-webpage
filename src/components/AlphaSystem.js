@@ -16,7 +16,6 @@ const AlphaSystem = () => {
           <meta property="og:type" content="website" />
           <meta property="og:image" content={'${process.env.PUBLIC_URL}/pics/AlphaLubImage1.webp'} />
           <meta property="og:image:alt" content="Alpha Lubricator Upgrade" />
-          <link rel="canonical" href="https://di-tech.eu/alpha-system" />
       </Helmet>
 
       <h1 className='heading-of-Lubricator-page'>Alpha Lubricator Upgrade</h1>

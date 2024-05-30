@@ -26,7 +26,6 @@ const CylinderMeasurements = () => {
             <meta property="og:type" content="website" />
             <meta property="og:image" content={'${process.env.PUBLIC_URL}/pics/cylinder.webp'} />
             <meta property="og:image:alt" content="Cylinder liner measurement tool" />
-            <link rel="canonical" href="https://di-tech.eu/cylinder-measurement" />
         </Helmet>
 
         <p className='section-title-for-cylinderPage1'>What we Offer</p>

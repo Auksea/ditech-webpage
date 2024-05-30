@@ -14,7 +14,6 @@ function MEengines() {
         <meta property="og:description" content="Di-Tech offers specialized engineering services for EEXI-EPL ME/MC engines, designed to optimize performance and efficiency. Contact us today to enhance your fleet's capabilities." />
         <meta property="og:url" content="https://di-tech.eu/ME-MC-engines" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/ME-MC-engines" />
       </Helmet>
 
       <h1 className="headingofMEengines">EEXI-EPL ME/MC engines</h1>

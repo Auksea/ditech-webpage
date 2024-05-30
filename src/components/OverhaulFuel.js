@@ -14,7 +14,6 @@ function OverhaulFuel() {
         <meta property="og:description" content="Explore our comprehensive overhaul services for fuel boosters and exhaust valve actuators. Contact us today to elevate your fleet's performance and efficiency." />
         <meta property="og:url" content="https://di-tech.eu/overhoal-fuel-boosters" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://di-tech.eu/overhoal-fuel-boosters" />
       </Helmet>
 
       <h1 className="headingofOverhaulFuel">Overhaul of Fuel boosters/Exhaust valve actuators</h1>
