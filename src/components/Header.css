@@ -240,6 +240,30 @@
     height: 80px;
     margin-top: 3vw;
   }
+
+@media only screen and (max-width: 768px) {
+  .header-wrapper {
+    background-size: cover; 
+    background-position: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .heading-container {
+    left: 4vw;
+    width: calc(100% - 8vw);
+  }
+
+  .company-icon-header {
+    height: 80px;
+    margin-top: 3vw;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+}
+
 }
 
 

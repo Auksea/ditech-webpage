@@ -179,8 +179,17 @@ const Header = ({ isDropdownOpen, toggleDropdown }) => {
                 <title>{headerText}</title>
                 <meta name="description" content={`Discover ${headerText} services and solutions provided by our expert marine engineering team.`} />
             </Helmet>
+
             <Link className="navbar-brand" to="/">
-                <img src={`${process.env.PUBLIC_URL}${companyLogo}`} alt="marine engineer" className="company-icon-header" loading="lazy" />
+            <img
+                src={`${process.env.PUBLIC_URL}${companyLogo}`}
+                alt="marine engineer"
+                className="company-icon-header"
+                loading="lazy"
+                height="150px"
+                width="auto"
+                title="Di-Tech Marine Engineering Logo"
+            />
             </Link>
             <div className={`heading-container ${isContactPage ? 'contact-page' : ''} ${isAboutPage ? 'about-page' : ''}`}>
                 <h1 className="heading">{headerText}</h1>
