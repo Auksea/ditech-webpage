@@ -8,7 +8,7 @@ function EngineeringServices() {
       <Helmet>
         <title>Engineering Services for Ship Retrofit - Di-Tech Marine Engineering</title>
         <meta name="description" content="Discover Di-Tech's comprehensive engineering services tailored for ship retrofit projects. From upgrading propulsion systems to enhancing fuel efficiency, our team is equipped to handle diverse retrofit needs. Contact us to explore how our engineering services can elevate your fleet's performance and enhance environmental sustainability." />
-        <meta name="keywords" content="engineering services, ship retrofit, marine engineering, propulsion systems, fuel efficiency, environmental sustainability, PMIs, Performance Measurement Indicators" />
+        <meta name="keywords" content="2-stroke retrofit, engineering services, ship retrofit, marine engineering, propulsion systems, fuel efficiency, environmental sustainability, PMIs, Performance Measurement Indicators" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Engineering Services for Ship Retrofit - Di-Tech Marine Engineering" />
         <meta property="og:description" content="Discover Di-Tech's comprehensive engineering services tailored for ship retrofit projects. From upgrading propulsion systems to enhancing fuel efficiency, our team is equipped to handle diverse retrofit needs. Contact us to explore how our engineering services can elevate your fleet's performance and enhance environmental sustainability." />

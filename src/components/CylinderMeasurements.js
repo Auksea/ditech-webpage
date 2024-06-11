@@ -18,7 +18,7 @@ const CylinderMeasurements = () => {
         <Helmet>
             <title>Cylinder Liner Measurement - Di-Tech Marine Engineering</title>
             <meta name="description" content="Learn about Di-Tech Marine Engineering's cylinder liner measurement services, including condition-based evaluation and 3D scanning of cylinder liners. Enhance vessel efficiency and minimize operational downtime." />
-            <meta name="keywords" content="Cylinder Liner Measurement, Di-Tech Marine Engineering, 3D scanning, condition-based evaluation, vessel efficiency, operational downtime, marine engineering services" />
+            <meta name="keywords" content="3D Liner scanning, Nemoy, Health check of main engine, Cylinder Liner Measurement, Di-Tech Marine Engineering, 3D scanning, condition-based evaluation, vessel efficiency, operational downtime, marine engineering services" />
             <meta name="robots" content="index, follow" />
             <meta property="og:title" content="Cylinder Liner Measurement - Di-Tech Marine Engineering" />
             <meta property="og:description" content="Discover Di-Tech Marine Engineering's expert cylinder liner measurement services. Utilize 3D scanning and condition-based evaluation to enhance vessel efficiency and minimize downtime." />

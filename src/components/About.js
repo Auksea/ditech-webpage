@@ -39,16 +39,16 @@ const AboutPage = () => {
       <Helmet>
         <title>About Us - Di-Tech Marine Engineering</title>
         <meta name="description" content="Learn about Di-Tech Marine Engineering, your expert partner in MAN B&W two-stroke marine engine services. Discover our values, mission, and extensive experience in the marine industry." />
-        <meta name="keywords" content="Di-Tech Marine Engineering, MAN B&W engines, two-stroke marine engines, marine engine maintenance, marine engine troubleshooting, marine engine services, marine engineering company" />
+        <meta name="keywords" content="Di-Tech Marine Engineering, MAN B&W engines, 2-stroke engine maintenance, 2-stroke specialist, 2-stroke workshop, Alpha Lubricator, ELFI Overhaul, ELVA Overhaul, FIVA Overhaul, HCU, HPS, MAN genuine spare parts, MAN 2-stroke troubleshooting, Engine power limitiation, ShaPoLi, Piston pull, Exhaust valve overhaul, Fuel valve overhaul, Turbocharger overhaul, LDM, 3D Liner scanning, Nemoy, Health check of main engine, Engine upgrade, 2-stroke retrofit" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="About Us - Di-Tech Marine Engineering" />
         <meta property="og:description" content="Discover Di-Tech Marine Engineering's expertise in MAN B&W two-stroke marine engines. Learn about our mission, values, and extensive industry experience." />
         <meta property="og:url" content="https://di-tech.eu/about" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={'${process.env.PUBLIC_URL}/pics/work13.webp'} />
+        <meta property="og:image" content={`${process.env.PUBLIC_URL}/pics/work13.webp`} />
         <meta property="og:image:alt" content="Di-Tech Marine Engineering Logo" />
       </Helmet>
-
+  
       <div className="values-block">
         <p className="block-heading-values">Our Values</p>
         <div className="value">
@@ -76,7 +76,7 @@ const AboutPage = () => {
       <div className="mission-block">
         <p className="block-heading-mission">Our Mission</p>
         <h2><FontAwesomeIcon icon={faBusinessTime} /></h2>
-        <p className="mission-text">Provide services, maintenance and troubleshooting on MAN B&W two-stroke Marine Engines</p>
+        <p className="mission-text">Provide services, maintenance, and troubleshooting on MAN B&W two-stroke Marine Engines, specializing maintenance as a trusted 2-stroke specialist workshop.</p>
       </div>
       
       <div className="experience-block">
@@ -89,13 +89,15 @@ const AboutPage = () => {
         </div>
         <div className="experience-text">
           <p className='block-heading-exp'>Experience</p>
-          <p><span style={{ fontStyle: 'italic', fontSize: '40px' }}>At our core </span>we excel in providing specialized services tailored specifically for MAN B&W two-stroke Marine Engines. With two decades of dedicated experience under our belt, we've honed our expertise in service, maintenance, and troubleshooting for these engines to perfection. Our proficiency extends across the spectrum, encompassing both conventional Diesel and Dual Fuel engines.</p>
+          <p><span style={{ fontStyle: 'italic', fontSize: '40px' }}>At our core </span>we excel in providing specialized services tailored specifically for MAN B&W two-stroke Marine Engines. With two decades of dedicated experience under our belt, we've honed our expertise in service, maintenance, and troubleshooting for these engines to perfection, particularly in 2-stroke engine maintenance. Our proficiency extends across the spectrum, encompassing both conventional Diesel and Dual Fuel engines. As a leading 2-stroke specialist workshop, we prioritize your satisfaction above all else.</p>
           <p>When you choose us, you're not just selecting a service provider; you're partnering with a team that prioritizes your satisfaction above all else. We understand the critical role marine engines play in your operations, which is why we go above and beyond to ensure they operate at peak efficiency and reliability.</p>
           <p>In choosing us, you're not just investing in a service provider; you're investing in the longevity and success of your maritime ventures.</p>
         </div>
       </div>
     </div>
   );
+  
+  
 };  
 
 export default AboutPage;

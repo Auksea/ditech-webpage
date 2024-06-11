@@ -8,7 +8,7 @@ function GeneralMaintenance() {
       <Helmet>
         <title>General Maintenance - Di-Tech Marine Engineering</title>
         <meta name="description" content="Di-Tech specializes in general maintenance services including piston pull and bearing replacement. Contact us today to explore how our engineering services can elevate your fleet's performance and efficiency." />
-        <meta name="keywords" content="general maintenance, piston pull, bearing replacement, marine engineering, fleet performance, efficiency" />
+        <meta name="keywords" content="Piston pull, general maintenance, piston pull, bearing replacement, marine engineering, fleet performance, efficiency" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="General Maintenance - Di-Tech Marine Engineering" />
         <meta property="og:description" content="Di-Tech specializes in general maintenance services including piston pull and bearing replacement. Contact us today to explore how our engineering services can elevate your fleet's performance and efficiency." />

@@ -8,7 +8,7 @@ function TroubleShooting() {
      <Helmet>
         <title>Troubleshooting Services for Ship Systems - Di-Tech Marine Engineering</title>
         <meta name="description" content="Specializing in troubleshooting various ship systems including pneumatic control, hydraulic control, electrical control, main engine control, fuel gas supply, and dual fuel engine systems." />
-        <meta name="keywords" content="troubleshooting, ship systems, pneumatic control, hydraulic control, electrical control, main engine control, fuel gas supply, dual fuel engines" />
+        <meta name="keywords" content="MAN genuine spare parts, MAN 2-stroke troubleshooting, ship systems, pneumatic control, hydraulic control, electrical control, main engine control, fuel gas supply, dual fuel engines" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Troubleshooting Services for Ship Systems - Di-Tech Marine Engineering" />
         <meta property="og:description" content="Specializing in troubleshooting various ship systems including pneumatic control, hydraulic control, electrical control, main engine control, fuel gas supply, and dual fuel engine systems." />

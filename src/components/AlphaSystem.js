@@ -8,7 +8,7 @@ const AlphaSystem = () => {
       <Helmet>
           <title>Alpha Lubricator Upgrade - Slow Steaming Kit - Di-Tech Marine Engineering</title>
           <meta name="description" content="Explore the Alpha Lubricator Upgrade and Slow Steaming Kit offered by Di-Tech Marine Engineering. Learn about its benefits, scope of content, and how it optimizes cylinder oil consumption for marine engines." />
-          <meta name="keywords" content="Alpha Lubricator Upgrade, Slow Steaming Kit, Di-Tech Marine Engineering, cylinder oil consumption, marine engines, lubrication optimization, engine performance, fuel efficiency" />
+          <meta name="keywords" content="Alpha Lubricator Upgrade, Slow Steaming Kit, Di-Tech Marine Engineering, cylinder oil consumption, marine engines, lubrication optimization, engine performance, fuel efficiency, 2-stroke engine maintenance, 2-stroke specialist, 2-stroke workshop" />
           <meta name="robots" content="index, follow" />
           <meta property="og:title" content="Alpha Lubricator Upgrade - Slow Steaming Kit - Di-Tech Marine Engineering" />
           <meta property="og:description" content="Discover the Alpha Lubricator Upgrade and Slow Steaming Kit. Learn how Di-Tech Marine Engineering optimizes cylinder oil consumption and enhances marine engine performance." />
@@ -27,32 +27,24 @@ const AlphaSystem = () => {
           <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage2.webp`} alt="ship engine repair companies" className="row-image" />
           <h2>Reduction of cylinder oil costs</h2>
           <p>
-            In early 2012, a new layout of the Alpha Lubricator in new MC engines was intro-
-            duced. Along with a number of design improvements, the injection volume and
-            frequency has been changed in order to optimise the cylinder oil consumption at
-            low load.
+            In early 2012, a new layout of the Alpha Lubricator in new MC engines was introduced. Along with a number of design improvements, the injection volume and frequency has been changed in order to optimize the cylinder oil consumption at low load.
           </p>
           <p>
-            Now, Alpha Lubricator Upgrade is introduced as a retrofit solution,
-            optimising cylinder oil consumption in existing engines.
+            Now, Alpha Lubricator Upgrade is introduced as a retrofit solution, optimizing cylinder oil consumption in existing engines.
           </p>
         </div>
         <div className="row-item">
           <p>
-            A consequence of substantial over-lubrication at low load is generating deposits
-            on the piston crown and rings, increasing the risk of damage to the cylinder liners.
-            In addition, over-lubrication generates excess costs for unnecessary lubrication oil.
+            A consequence of substantial over-lubrication at low load is generating deposits on the piston crown and rings, increasing the risk of damage to the cylinder liners. In addition, over-lubrication generates excess costs for unnecessary lubrication oil.
           </p>
           <p>
-            The Alpha Lubricator Upgrade is a major improvement of the system. By adapting
-            the new lubricator layout, a complete lubrication optimisation at all engine loads
-            is now possible.
+            The Alpha Lubricator Upgrade is a major improvement of the system. By adapting the new lubricator layout, a complete lubrication optimization at all engine loads is now possible.
           </p>
           <h2 className='Lubricatorlist'>Benefits of upgrading the system: </h2>
           <ul>
             <li>Cylinder lubrication oil savings of 20-50% at low load</li>
             <li>More accurate feed rate control at all engine loads</li>
-            <li>Minimising over-lubrication at low load, reducing deposits, hence improving the cylinder condition</li>
+            <li>Minimizing over-lubrication at low load, reducing deposits, hence improving the cylinder condition</li>
             <li>Implementation of latest design features</li>
             <li>Upgraded interface by latest software version.</li>
           </ul>
@@ -60,33 +52,23 @@ const AlphaSystem = () => {
       </div>
 
       <div className="row-wrapper">
-        <h2 className='middle-heading'>Alpha Lubricator Upgrade is benefi cial to all large bore MC engines (70-98 bore) and older installations in small bore engines.</h2>
+        <h2 className='middle-heading'>Alpha Lubricator Upgrade is beneficial to all large bore MC engines (70-98 bore) and older installations in small bore engines.</h2>
         <div className="row">
           <div className="row-item">
             <h4>Scope of content</h4>
             <p>
-              The Alpha Lubricator Upgrade, Slow
-              Steaming Kit, comprises a new MCU, including the latest software, and the improved lubricator layout:
+              The Alpha Lubricator Upgrade, Slow Steaming Kit, comprises a new MCU, including the latest software, and the improved lubricator layout:
             </p>
             <p>
-              <strong>MCU Mk 2: </strong>New hardware version, plug
-              and play in existing ALCU. New software
-              with upgraded algorithm and system interface
+              <strong>MCU Mk 2: </strong>New hardware version, plug and play in existing ALCU. New software with upgraded algorithm and system interface
             </p>
           </div>
           <div className="row-item">
             <p>
-              <strong>Lubricators: </strong>Complete lubricators with
-              all new design features (recommended at
-              the standard 5-year lubricator overhaul)
-              or
+              <strong>Lubricators: </strong>Complete lubricators with all new design features (recommended at the standard 5-year lubricator overhaul) or
             </p>
             <p>
-              <strong>Lubricator kits: </strong>
-              Parts to modify the lubri-
-              cators for optimised slow steaming opera-
-              tion (require that solenoid valves, accumu-
-              lators, etc. are in good working condition).
+              <strong>Lubricator kits: </strong>Parts to modify the lubricators for optimized slow steaming operation (require that solenoid valves, accumulators, etc. are in good working condition).
             </p>
           </div>
         </div>
@@ -95,13 +77,14 @@ const AlphaSystem = () => {
       <div className="last-images-container">
         <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage3.webp`} alt="ship engine repair companies" className="row-image" />
         <p>
-          The new lubricator layout reduces the engine power level at which the algorithm, controlling the cylinder oil feed rate, changes. The “breakpoint” is moved to the left. The Alpha Lubricator Upgrade enables the cylinder oil feed rate to follow a lower curve. The marked area in the fi gure above corresponds to the potential lubrication oil savings from upgrading the system. 
+          The new lubricator layout reduces the engine power level at which the algorithm, controlling the cylinder oil feed rate, changes. The “breakpoint” is moved to the left. The Alpha Lubricator Upgrade enables the cylinder oil feed rate to follow a lower curve. The marked area in the figure above corresponds to the potential lubrication oil savings from upgrading the system. 
         </p>
         <img src={`${process.env.PUBLIC_URL}/pics/AlphaLubImage4.webp`} alt="ship engine repair companies" className="row-image" />
       </div>
     </div>
   );
 };
+
 
 export default AlphaSystem;
 

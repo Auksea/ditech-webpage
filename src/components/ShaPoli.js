@@ -8,7 +8,7 @@ function ShaPoLi() {
       <Helmet>
         <title>ShaPoLi (Shaft Power Limitation) - Di-Tech Marine Engineering</title>
         <meta name="description" content="ShaPoLi (Shaft Power Limitation) is a system for managing power output in marine engines." />
-        <meta name="keywords" content="ShaPoLi, Shaft Power Limitation, marine engines, power management" />
+        <meta name="keywords" content="ShaPoLi, Shaft Power Limitation, marine engines, power management, ShaPoLi ( shaft power limitiation)" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="ShaPoLi (Shaft Power Limitation) - Di-Tech Marine Engineering" />
         <meta property="og:description" content="ShaPoLi (Shaft Power Limitation) is a system for managing power output in marine engines." />
