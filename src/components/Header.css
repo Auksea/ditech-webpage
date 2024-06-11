@@ -110,7 +110,7 @@
 }
 
 @media only screen and (max-width: 950px) {
-  .header-wrapper {
+ .header-wrapper {
     height: 100vh;
     display: flex;
     align-items: flex-start;

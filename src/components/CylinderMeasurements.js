@@ -35,7 +35,7 @@ const CylinderMeasurements = () => {
             <div className="col-md-6">
                 <p className='cylinder-text'>Minimize Operational Downtime and Enhance Vessel Efficiency through Big Data Analysis</p>
                 <p className='cylinder-text'>Enhance vessel operations and minimize downtime through meticulous Big Data analysis of cylinder conditions</p>
-                <p className='cylinder-text'>Nemoy Orbiter offers comprehensive 3D linear wear analyses, alongside refined visual liner inspections, bolstered by revised port inspection protocols</p>
+                <p className='cylinder-text'>Di-Tech offers comprehensive 3D linear wear analyses, alongside refined visual liner inspections, bolstered by revised port inspection protocols</p>
                 <p className='cylinder-text'><strong>Our services include:</strong></p>
                 <ul>
                     <li>Precise 3D scanning of cylinder liners</li>
@@ -60,6 +60,9 @@ const CylinderMeasurements = () => {
                     </div>
                     <div className={`carousel-item ${activeIndex === 1 ? 'active' : ''}`}>
                         <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements2.webp`} alt="3D scanning of cylinder liners" />
+                    </div>
+                    <div className={`carousel-item ${activeIndex === 1 ? 'active' : ''}`}>
+                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements3.webp`} alt="3D scanning of cylinder liners" />
                     </div>
                     <div className={`carousel-item ${activeIndex === 2 ? 'active' : ''}`}>
                         <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements4.webp`} alt="3D scanning of cylinder liners" />

@@ -254,7 +254,7 @@ const Header = ({ isDropdownOpen, toggleDropdown }) => {
                         </div>
                     </div>
                 </nav>
-                {showCurtainMenu && (
+                {isMobile && showCurtainMenu && (
                 <div className="curtain-menu-header">
                     <button className="back-button" onClick={handleExitMenu}>
                         <FontAwesomeIcon icon={faArrowLeft} />
@@ -312,9 +312,6 @@ const Header = ({ isDropdownOpen, toggleDropdown }) => {
     };
 
 export default Header;
-
-
-
 
 
 
