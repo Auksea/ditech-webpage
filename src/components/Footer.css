@@ -3,6 +3,7 @@
     justify-content: space-around;
     padding: 5px;
     background-color: white;
+    flex-wrap: wrap;
 }
 
 .FooterColumn {
@@ -28,12 +29,52 @@
     max-width: 100%;
 }
 
-.FooterColumn h4{
+.FooterColumn h4 {
     margin-bottom: 10px;
 }
 
-.FooterColumn p{
+.FooterColumn p {
     font-size: 15px;
+}
+
+.ReadMoreSection {
+    width: 100%;
+    text-align: end;
+    margin-top: 20px;
+}
+
+.ReadMoreButton {
+    background-color: white;
+    color: grey;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.ReadMoreContent {
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.ReadMoreLinks p {
+    font-size: 15px; /* Match the font size of <p> */
+    margin-right: 15px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.ReadMoreLinks a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.ReadMoreLinks a:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 950px) {
@@ -50,17 +91,18 @@
         padding: 5px;
     }
 
-    .column {
+    .FooterColumn {
         padding: 0 50px;
+        margin-top: 20px;
     }
 
-    .column img {
-        margin: 0 auto;
-        margin-top: 15px;
+    .FooterImgColumn {
+        margin-top: 20px;
     }
 
-    .column h4 {
+    .FooterColumn h4 {
         margin-top: 20px;
         margin-bottom: 20px;
     }
 }
+

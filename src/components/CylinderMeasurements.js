@@ -49,6 +49,7 @@ const CylinderMeasurements = () => {
                         className="engine cylinder measuring tool"
                         src={`${process.env.PUBLIC_URL}/pics/cylinder.webp`}
                         alt="Cylinder"
+                        style={{ width: '90%', height: 'auto' }}
                     />
                 </div>
             </div>

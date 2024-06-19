@@ -12,7 +12,12 @@ const Header = ({ isDropdownOpen, toggleDropdown }) => {
     const [isMobile, setIsMobile] = useState(false);
     const [showMobileServices, setShowMobileServices] = useState(false);
     const [headerImageLoaded, setHeaderImageLoaded] = useState(false);
+    const [showMegaMenu, setShowMegaMenu] = useState(false);
     const location = useLocation();
+
+    const handleToggleMegaMenu = () => {
+        setShowMegaMenu(prevState => !prevState);
+    };
 
     const handleToggleSublist = (e) => {
         setShowCurtainMenu(!showCurtainMenu);
@@ -40,17 +45,16 @@ const Header = ({ isDropdownOpen, toggleDropdown }) => {
 
     useEffect(() => {
         const setResponsiveness = () => {
-            return window.innerWidth < 768 ? setIsMobile(true) : setIsMobile(false);
+          setIsMobile(window.innerWidth <= 1024);
         };
-
+    
         setResponsiveness();
-
         window.addEventListener('resize', setResponsiveness);
-
+    
         return () => {
-            window.removeEventListener('resize', setResponsiveness);
+          window.removeEventListener('resize', setResponsiveness);
         };
-    }, []);
+      }, []);
 
     useEffect(() => {
         if (showCurtainMenu) {
@@ -175,141 +179,159 @@ const Header = ({ isDropdownOpen, toggleDropdown }) => {
     
     return (
         <div className={`header-wrapper ${animated ? 'animated' : ''}`} style={{ backgroundImage: headerImageLoaded ? `url(${process.env.PUBLIC_URL}${headerImage})` : 'none' }}>
-            <Helmet>
-                <title>{headerText}</title>
-                <meta name="description" content={`Discover ${headerText} services and solutions provided by our expert marine engineering team.`} />
-            </Helmet>
+        <Helmet>
+        <title>{headerText}</title>
+        <meta name="description" content={`Discover ${headerText} services and solutions provided by our expert marine engineering team.`} />
+        </Helmet>
 
-            <Link className="navbar-brand" to="/">
-            <img
-                src={`${process.env.PUBLIC_URL}${companyLogo}`}
-                alt="marine engineer"
-                className="company-icon-header"
-                loading="lazy"
-                height="150px"
-                width="auto"
-                title="Di-Tech Marine Engineering Logo"
-            />
-            </Link>
-            <div className={`heading-container ${isContactPage ? 'contact-page' : ''} ${isAboutPage ? 'about-page' : ''}`}>
-                <h1 className="heading">{headerText}</h1>
-            </div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <div className="container">
-                    <button
-                        className={`navbar-toggler custom-toggler ${isDropdownOpen ? 'dropdown-open' : ''}`}
-                        type="button"
-                        onClick={handleToggleSublist}>
-                        <span className="navbar-toggler-icon"></span>
-                        <span className="dropdown-line"></span>
-                    </button>
-                    <div className={`collapse navbar-collapse ${isMobile ? 'hide' : ''}`} id="navbarNav">
-                        <ul className={`navbar-nav ${isMobile ? '' : 'ml-auto'}`}>
-                            <li className="nav-item active">
-                                <Link className="nav-link" to="/">Home</Link>
-                            </li>
-                            <li className="nav-item active">
-                                <Link className="nav-link" to="/about">About</Link>
-                            </li>
-                            <li className="nav-item dropdown">
-                            <Dropdown show={isDropdownOpen} onToggle={(isOpen) => toggleDropdown(isOpen)}>
-                                <Dropdown.Toggle id="dropdown-basic" className={`nav-link custom-dropdown-toggle ${isDropdownOpen ? 'dropdown-open' : ''}`}>
-                                    Services
-                                </Dropdown.Toggle>
-                                    <Dropdown.Menu className="custom-dropdown-menu">
-                                        <Dropdown.Item as={Link} to="/pre-docking">Pre-Docking inspection</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/docking-services" onClick={handleToggleSublist} style={{ whiteSpace: 'normal', fontSize: '0.9rem' }}>
-                                            Docking services for MC/MC-C ME-B, ME-C, ME-GI, ME-GA, LGIP, LGIM, including engine overhaul supervision and manpower provision in dry-dock
-                                        </Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/cylinder-measurement">
-                                            Cylinder liner measurement including condition-based evaluation
-                                        </Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/engineering-services">Engineering services for retrofit</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/alpha-system">Alpha lubricator system, overhaul, troubleshooting and upgrade</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/performance-measurement">Performance measurement and evaluation</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/pressure-measure">Real time Pressure measuring instrument</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/onboard-overhaul">Onboard overhaul of FIVA/ELFI/ELVA</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/health-check">Health check of engines</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/large-repair">Large repair</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="adjustment-valves">Overhaul, testing and adjustment of fuel injection valves</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/recondition-valves">Reconditioning of exhaust valve spindles and seats</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/overhoal-exhaust">Overhaul of Exhaust valves onboard and in workshop</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/overhoal-fuel-boosters">Overhaul of Fuel boosters/Exhaust valve actuators</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/general-maintenance">General maintenance (Piston pull, bearing replacement etc)</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/pump-overhaul">FIVA, HPS pump workshop overhauling (ME-C/ME-B)</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/supply-engine">Supply of engine driven hydraulic pumps, made by Danfoss (Eaton)</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/ME-MC-engines">EEXI-EPL ME/MC engines</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/shaPoli">ShaPoLi (Shaft Power Limitation)</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/de-rating">De-rating</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/trouble-shooting">Troubleshooting</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/fuel-gas-supply">Fuel Gas Supply</Dropdown.Item>
-                                        <Dropdown.Item as={Link} to="/ME-training">Onboard ME Training, also covering dual fuel engines</Dropdown.Item>
-                                    </Dropdown.Menu>
-                                </Dropdown>
-                                </li>
-                                <li className="nav-item active">
-                                    <Link className="nav-link" to="/contact">Contact</Link>
-                                </li>
+        <Link className="navbar-brand" to="/">
+        <img 
+            src={`${process.env.PUBLIC_URL}${companyLogo}`}
+            alt="marine engineer"
+            className="company-icon-header"
+            loading="lazy"
+            height="150px"
+            width="auto"
+            title="Di-Tech Marine Engineering Logo"/>
+        </Link>
+            
+        <div className={`heading-container ${isContactPage ? 'contact-page' : ''} ${isAboutPage ? 'about-page' : ''}`}>
+            <h1 className="heading">{headerText}</h1>
+        </div>
+
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="container-fluid">
+            <button
+                className={`navbar-toggler custom-toggler ${isDropdownOpen ? 'dropdown-open' : ''}`}
+                type="button"
+                onClick={handleToggleSublist}>
+            <span className="navbar-toggler-icon"></span>
+            <span className="dropdown-line"></span>
+            </button>
+
+            <div className={`collapse navbar-collapse ${isMobile ? 'hide' : ''}`} id="navbarNav">
+                <ul className={`navbar-nav ${isMobile ? '' : 'ml-auto'}`}>
+                    <li className="nav-item active">
+                    <Link className="nav-link" to="/">Home</Link>
+                    </li>
+                <li className="nav-item active mega-menu">
+                    <button className="nav-link" onClick={handleToggleMegaMenu}>
+                        Services
+                </button>
+                {showMegaMenu && (
+                    <div className="mega-menu-content">
+                        <div className="row">
+                            <div className="col">
+                            <ul>
+                                <li><Link to="/pre-docking" onClick={handleToggleMegaMenu}>Pre-Docking inspection</Link></li>
+                                <li><Link to="/docking-services" onClick={handleToggleMegaMenu}>Docking services</Link></li>
+                                <li><Link to="/cylinder-measurement" onClick={handleToggleMegaMenu}>Cylinder liner measurement</Link></li>
+                                <li><Link to="/engineering-services" onClick={handleToggleMegaMenu}>Engineering services for retrofit</Link></li>
+                                <li><Link to="/alpha-system" onClick={handleToggleMegaMenu}>Alpha lubricator system</Link></li>
                             </ul>
+                            </div>
+                            <div className="col">
+                            <ul>
+                                <li><Link to="/performance-measurement" onClick={handleToggleMegaMenu}>Performance measurement and evaluation</Link></li>
+                                <li><Link to="/pressure-measure" onClick={handleToggleMegaMenu}>Real time Pressure measuring instrument</Link></li>
+                                <li><Link to="/onboard-overhaul" onClick={handleToggleMegaMenu}>Onboard overhaul of FIVA/ELFI/ELVA</Link></li>
+                                <li><Link to="/health-check" onClick={handleToggleMegaMenu}>Health check of engines</Link></li>
+                                <li><Link to="/large-repair" onClick={handleToggleMegaMenu}>Large repair</Link></li>
+                            </ul>
+                            </div>
+                            <div className="col">
+                            <ul>
+                                <li><Link to="/adjustment-valves" onClick={handleToggleMegaMenu}>Overhaul, testing and adjustment of fuel injection valves</Link></li>
+                                <li><Link to="/recondition-valves" onClick={handleToggleMegaMenu}>Reconditioning of exhaust valve spindles and seats</Link></li>
+                                <li><Link to="/overhoal-exhaust" onClick={handleToggleMegaMenu}>Overhaul of Exhaust valves onboard and in workshop</Link></li>
+                                <li><Link to="/overhoal-fuel-boosters" onClick={handleToggleMegaMenu}>Overhaul of Fuel boosters/Exhaust valve actuators</Link></li>
+                                <li><Link to="/general-maintenance" onClick={handleToggleMegaMenu}>General maintenance (Piston pull, bearing replacement etc)</Link></li>
+                            </ul>
+                            </div>
+                            <div className="col">
+                            <ul>
+                                <li><Link to="/pump-overhaul" onClick={handleToggleMegaMenu}>FIVA, HPS pump workshop overhauling (ME-C/ME-B)</Link></li>
+                                <li><Link to="/supply-engine" onClick={handleToggleMegaMenu}>Supply of engine driven hydraulic pumps, made by Danfoss (Eaton)</Link></li>
+                                <li><Link to="/ME-MC-engines" onClick={handleToggleMegaMenu}>EEXI-EPL ME/MC engines</Link></li>
+                                <li><Link to="/shaPoli" onClick={handleToggleMegaMenu}>ShaPoLi (Shaft Power Limitation)</Link></li>
+                                <li><Link to="/de-rating" onClick={handleToggleMegaMenu}>De-rating</Link></li>
+                                <li><Link to="/trouble-shooting" onClick={handleToggleMegaMenu}>Troubleshooting</Link></li>
+                                <li><Link to="/fuel-gas-supply" onClick={handleToggleMegaMenu}>Fuel Gas Supply</Link></li>
+                                <li><Link to="/ME-training" onClick={handleToggleMegaMenu}>Onboard ME Training, also covering dual fuel engines</Link></li>
+                            </ul>
+                            </div>
                         </div>
                     </div>
-                </nav>
-                {isMobile && showCurtainMenu && (
-                <div className="curtain-menu-header">
-                    <button className="back-button" onClick={handleExitMenu}>
-                        <FontAwesomeIcon icon={faArrowLeft} />
-                    </button>
-                    <ul className="curtain-menu-items">
-                        <li><Link to="/" onClick={handleExitMenu}>Home</Link></li>
-                        <li><Link to="/about" onClick={handleExitMenu}>About</Link></li>
-                        <li>
-                        <button
-                            className="accordion-button collapsed custom-button"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseOne"
-                            onClick={handleToggleServices}>
-                            Services
-                        </button>
-                            <div
-                                id="flush-collapseOne"
-                                className={`panel collapse ${showMobileServices ? 'show' : ''}`}>
-                                    <ul>
-                                        <li><Link to="/pre-docking" onClick={handleExitMenu}>Pre-Docking inspection</Link></li>
-                                        <li><Link to="/docking-services" onClick={handleExitMenu}>Docking services</Link></li>
-                                        <li><Link to="/cylinder-measurement" onClick={handleExitMenu}>Cylinder liner measurement</Link></li>
-                                        <li><Link to="/engineering-services" onClick={handleExitMenu}>Engineering services for retrofit</Link></li>
-                                        <li><Link to="/alpha-system" onClick={handleExitMenu}>Alpha lubricator system</Link></li>
-                                        <li><Link to="/performance-measurement" onClick={handleExitMenu}>Performance measurement and evaluation</Link></li>
-                                        <li><Link to="/pressure-measure" onClick={handleExitMenu}>Real time Pressure measuring instrument</Link></li>
-                                        <li><Link to="/onboard-overhaul" onClick={handleExitMenu}>Onboard overhaul of FIVA/ELFI/ELVA</Link></li>
-                                        <li><Link to="/health-check" onClick={handleExitMenu}>Health check of engines</Link></li>
-                                        <li><Link to="/large-repair" onClick={handleExitMenu}>Large repair</Link></li>
-                                        <li><Link to="adjustment-valves" onClick={handleExitMenu}>Overhaul, testing and adjustment of fuel injection valves</Link></li>
-                                        <li><Link to="/recondition-valves" onClick={handleExitMenu}>Reconditioning of exhaust valve spindles and seats</Link></li>
-                                        <li><Link to="/overhoal-exhaust" onClick={handleExitMenu}>Overhaul of Exhaust valves onboard and in workshop</Link></li>
-                                        <li><Link to="/overhoal-fuel-boosters" onClick={handleExitMenu}>Overhaul of Fuel boosters/Exhaust valve actuators</Link></li>
-                                        <li><Link to="/general-maintenance" onClick={handleExitMenu}>General maintenance (Piston pull, bearing replacement etc)</Link></li>
-                                        <li><Link to="/pump-overhaul" onClick={handleExitMenu}>FIVA, HPS pump workshop overhauling (ME-C/ME-B)</Link></li>
-                                        <li><Link to="/supply-engine" onClick={handleExitMenu}>Supply of engine driven hydraulic pumps, made by Danfoss (Eaton)</Link></li>
-                                        <li><Link to="/ME-MC-engines" onClick={handleExitMenu}>EEXI-EPL ME/MC engines</Link></li>
-                                        <li><Link to="/shaPoli" onClick={handleExitMenu}>ShaPoLi (Shaft Power Limitation)</Link></li>
-                                        <li><Link to="/de-rating" onClick={handleExitMenu}>De-rating</Link></li>
-                                        <li><Link to="/trouble-shooting" onClick={handleExitMenu}>Troubleshooting</Link></li>
-                                        <li><Link to="/fuel-gas-supply" onClick={handleExitMenu}>Fuel Gas Supply</Link></li>
-                                        <li><Link to="/ME-training" onClick={handleExitMenu}>Onboard ME Training, also covering dual fuel engines</Link></li>
-                                    </ul>
-                            </div>
+                    )}
+                </li>
+                            
+                    <li className="nav-item active">
+                        <Link className="nav-link" to="/about">About</Link>
+                    </li>
+                        <li className="nav-item active">
+                            <Link className="nav-link" to="/contact">Contact</Link>
                         </li>
-                        <li><Link to="/contact" onClick={handleExitMenu}>Contact</Link></li>
                     </ul>
                 </div>
-            )}
-        </div>
-        );
-    };
+            </div>
+        </nav>
+
+        {isMobile && showCurtainMenu && (
+        <div className="curtain-menu-header">
+            <button className="back-button" onClick={handleExitMenu}>
+                <FontAwesomeIcon icon={faArrowLeft} />
+            </button>
+            <ul className="curtain-menu-items">
+                <li><Link to="/" onClick={handleExitMenu}>Home</Link></li>
+                <li><Link to="/about" onClick={handleExitMenu}>About</Link></li>
+                <li>
+            <button
+                className="accordion-button collapsed custom-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+                onClick={handleToggleServices}>
+                Services
+            </button>
+                <div
+                id="flush-collapseOne"
+                className={`panel collapse ${showMobileServices ? 'show' : ''}`}>
+                <ul>
+                    <li><Link to="/pre-docking" onClick={handleExitMenu}>Pre-Docking inspection</Link></li>
+                    <li><Link to="/docking-services" onClick={handleExitMenu}>Docking services</Link></li>
+                    <li><Link to="/cylinder-measurement" onClick={handleExitMenu}>Cylinder liner measurement</Link></li>
+                    <li><Link to="/engineering-services" onClick={handleExitMenu}>Engineering services for retrofit</Link></li>
+                    <li><Link to="/alpha-system" onClick={handleExitMenu}>Alpha lubricator system</Link></li>
+                    <li><Link to="/performance-measurement" onClick={handleExitMenu}>Performance measurement and evaluation</Link></li>
+                    <li><Link to="/pressure-measure" onClick={handleExitMenu}>Real time Pressure measuring instrument</Link></li>
+                    <li><Link to="/onboard-overhaul" onClick={handleExitMenu}>Onboard overhaul of FIVA/ELFI/ELVA</Link></li>
+                    <li><Link to="/health-check" onClick={handleExitMenu}>Health check of engines</Link></li>
+                    <li><Link to="/large-repair" onClick={handleExitMenu}>Large repair</Link></li>
+                    <li><Link to="adjustment-valves" onClick={handleExitMenu}>Overhaul, testing and adjustment of fuel injection valves</Link></li>
+                    <li><Link to="/recondition-valves" onClick={handleExitMenu}>Reconditioning of exhaust valve spindles and seats</Link></li>
+                    <li><Link to="/overhoal-exhaust" onClick={handleExitMenu}>Overhaul of Exhaust valves onboard and in workshop</Link></li>
+                    <li><Link to="/overhoal-fuel-boosters" onClick={handleExitMenu}>Overhaul of Fuel boosters/Exhaust valve actuators</Link></li>
+                    <li><Link to="/general-maintenance" onClick={handleExitMenu}>General maintenance (Piston pull, bearing replacement etc)</Link></li>
+                    <li><Link to="/pump-overhaul" onClick={handleExitMenu}>FIVA, HPS pump workshop overhauling (ME-C/ME-B)</Link></li>
+                    <li><Link to="/supply-engine" onClick={handleExitMenu}>Supply of engine driven hydraulic pumps, made by Danfoss (Eaton)</Link></li>
+                    <li><Link to="/ME-MC-engines" onClick={handleExitMenu}>EEXI-EPL ME/MC engines</Link></li>
+                    <li><Link to="/shaPoli" onClick={handleExitMenu}>ShaPoLi (Shaft Power Limitation)</Link></li>
+                    <li><Link to="/de-rating" onClick={handleExitMenu}>De-rating</Link></li>
+                    <li><Link to="/trouble-shooting" onClick={handleExitMenu}>Troubleshooting</Link></li>
+                    <li><Link to="/fuel-gas-supply" onClick={handleExitMenu}>Fuel Gas Supply</Link></li>
+                    <li><Link to="/ME-training" onClick={handleExitMenu}>Onboard ME Training, also covering dual fuel engines</Link></li>
+                </ul>
+            </div>
+        </li>
+            <li><Link to="/contact" onClick={handleExitMenu}>Contact</Link></li>
+        </ul>
+    </div>
+ )}
+</div>
+    );
+};
 
 export default Header;
 

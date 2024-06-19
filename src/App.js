@@ -56,8 +56,8 @@ function App() {
                     <Route path="/large-repair" element={<LargeRepair />} />
                     <Route path="/adjustment-valves" element={<AdjustmentValves />} />
                     <Route path="/recondition-valves" element={<ReconditionValves />} />
-                    <Route path="/overhaul-exhaust" element={<OverhaulExhaust />} />
-                    <Route path="/overhaul-fuel-boosters" element={<OverhaulFuel />} />
+                    <Route path="overhoal-exhaust" element={<OverhaulExhaust />} />
+                    <Route path="/overhoal-fuel-boosters" element={<OverhaulFuel />} />
                     <Route path="/general-maintenance" element={<GeneralMaintenance />} />
                     <Route path="/pump-overhaul" element={<PumpOverhaul />} />
                     <Route path="/supply-engine" element={<SupplyEngine />} />
