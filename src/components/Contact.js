@@ -50,7 +50,7 @@ return (
             <div className="contact-info">
                 <div className="address-column">
                     <p><FaMapMarkerAlt /></p>
-                    <p>Holmensvej 24A,</p>
+                    <p>Holmensvej 36A,</p>
                     <p>3600 Frederikssund,</p>
                     <p>Denmark</p>
                 </div>
@@ -63,7 +63,7 @@ return (
         <div className="map-column">
             <iframe
                 title="location-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1396.2758087651682!2d12.076049523857487!3d55.8479180262925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465269a8ba60d623%3A0xe22e44f31e651af3!2sDI-Tech!5e0!3m2!1sen!2sdk!4v1710833904558!5m2!1sen!2sdk"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1018.9125981752945!2d12.076174196163363!3d55.84813911445046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652691034c79b69%3A0xa159b2e9a6585f4d!2sHolmensvej%2036A%2C%203600%20Frederikssund!5e0!3m2!1sen!2sdk!4v1740577717343!5m2!1sen!2sdk"
                 width="600"
                 height="450"
                 style={{ border: 0 }}

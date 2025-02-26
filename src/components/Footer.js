@@ -37,7 +37,7 @@ const Footer = ({ toggleDropdown }) => {
             <div className="FooterColumn">
                 <h4>Contact Information</h4>
                 <p>Di-Tech</p>
-                <p>Holmensvej 24A</p>
+                <p>Holmensvej 36A</p>
                 <p>3600 Frederikssund</p>
                 <p>Denmark</p>
                 <p>Phone: +45 24 21 54 51 / +45 25 73 73 66</p>
