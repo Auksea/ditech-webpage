@@ -1,9 +1,3 @@
-.imageForCylinderPage3 {
-    width: 700px;
-    height: 450px;
-    margin-top: 55px;
-}
-
 .section-title-for-cylinderPage1{
     color: gray;
     font-size: 30px;
@@ -22,43 +16,24 @@
 
 .cylinder-text {
     text-align: start;
-    margin-left: 50px;
-    padding: 5px;
     font-size: 20px;
+    margin-left: 0;
 }
 
-.row {
-    margin-bottom: 80px;
+.rowCylinder {
+    text-align: start;
+    margin-left: 50px;
+    margin-bottom: 100px;
 }
 
-@media screen and (max-width: 950px) {
-    .section-title-for-cylinderPage1{
-        font-size: 17px;
-    }
-    
-    .section-title-for-cylinderPage2{
-        font-size: 28px;
-    }
+@media (max-width: 950px) {
+  .section-title-for-cylinderPage1 { font-size: 17px; margin-left: 20px; }
+  .section-title-for-cylinderPage2 { font-size: 28px; margin-left: 20px; }
 
-    .imageForCylinderPage3 {
-        width: 100%;
-        height: auto;
-        margin-top: 30px;
-    }
-
-    .section-title-for-cylinderPage1 {
-        margin-left: 20px;
-    }
-
-    .section-title-for-cylinderPage2 {
-        margin-left: 20px;
-    }
-
-    .cylinder-text {
-        margin-left: 20px;
-    }
-
-    .row {
-        margin-bottom: 40px;
-    }
+  .rowCylinder {
+    text-align: start;
+    margin-left: 20px; 
+    margin-right: 20px;
+    margin-bottom: 100px;
+  }
 }

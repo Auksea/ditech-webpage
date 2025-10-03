@@ -5,14 +5,6 @@ import './CylinderMeasurements.css';
 const CylinderMeasurements = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setActiveIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
-        }, 5000);
-
-        return () => clearInterval(interval);
-    }, []);
-
     return (
     <div style={{ textAlign: 'center' }}>
         <Helmet>
@@ -31,8 +23,7 @@ const CylinderMeasurements = () => {
         <p className='section-title-for-cylinderPage1'>What we Offer</p>
         <h1 className="section-title-for-cylinderPage2">Cylinder liner measurement including condition-based evaluation</h1>
             
-        <div className="row">
-            <div className="col-md-6">
+        <div className="rowCylinder">
                 <p className='cylinder-text'>Minimize Operational Downtime and Enhance Vessel Efficiency through Big Data Analysis</p>
                 <p className='cylinder-text'>Enhance vessel operations and minimize downtime through meticulous Big Data analysis of cylinder conditions</p>
                 <p className='cylinder-text'>Di-Tech offers comprehensive 3D linear wear analyses, alongside refined visual liner inspections, bolstered by revised port inspection protocols</p>
@@ -43,32 +34,7 @@ const CylinderMeasurements = () => {
                     <li>Detailed liner and cylinder cover imaging</li>
                     </ul>
                     <p className='cylinder-text'>By harnessing the power of Big Data, we empower vessel operators to optimize maintenance schedules, mitigate unscheduled repairs, and ensure seamless operations</p>
-                </div>
-                <div className="col-md-6">
-                    <img
-                        className="engine cylinder measuring tool"
-                        src={`${process.env.PUBLIC_URL}/pics/cylinder.webp`}
-                        alt="Cylinder"
-                        style={{ width: '90%', height: 'auto' }}
-                    />
-                </div>
-            </div>
-
-            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-                <div className="carousel-inner">
-                    <div className={`carousel-item ${activeIndex === 0 ? 'active' : ''}`}>
-                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements1.webp`} alt="3D scanning of cylinder liners" />
-                    </div>
-                    <div className={`carousel-item ${activeIndex === 1 ? 'active' : ''}`}>
-                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements2.webp`} alt="3D scanning of cylinder liners" />
-                    </div>
-                    <div className={`carousel-item ${activeIndex === 1 ? 'active' : ''}`}>
-                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements3.webp`} alt="3D scanning of cylinder liners" />
-                    </div>
-                    <div className={`carousel-item ${activeIndex === 2 ? 'active' : ''}`}>
-                        <img className="d-block w-100" src={`${process.env.PUBLIC_URL}/pics/measurements4.webp`} alt="3D scanning of cylinder liners" />
-                    </div>
-                </div>
+                
             </div>
         </div>
     );
